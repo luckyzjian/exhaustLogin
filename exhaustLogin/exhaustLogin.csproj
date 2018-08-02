@@ -1,0 +1,1710 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DFF2F804-0F3D-447A-8354-DF1DFBBAFE51}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>exhaustLogin</RootNamespace>
+    <AssemblyName>exhaustLogin</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2, Version=8.2.0.2, Culture=neutral, PublicKeyToken=5fd520d36328f741, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\test\人员统计\人员统计\人员统计\bin\Debug\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v10.2.Core, Version=10.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v10.2, Version=10.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v10.2, Version=10.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v10.2, Version=10.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v10.2.UI, Version=10.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v10.2, Version=10.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="FastReport">
+      <HintPath>bin\Debug\fastReport\FastReport.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport.Bars">
+      <HintPath>bin\Debug\fastReport\FastReport.Bars.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport.Editor">
+      <HintPath>bin\Debug\fastReport\FastReport.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\HhzWebClient\HhzWebClient\bin\Debug\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="carLoginHN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="carLoginHN.designer.cs">
+      <DependentUpon>carLoginHN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="carLoginDali.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="carLoginDali.designer.cs">
+      <DependentUpon>carLoginDali.cs</DependentUpon>
+    </Compile>
+    <Compile Include="carLoginGA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="carLoginGA.designer.cs">
+      <DependentUpon>carLoginGA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="carLoginHHZ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="carLoginHHZ.designer.cs">
+      <DependentUpon>carLoginHHZ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="carLoginNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="carLoginNew.designer.cs">
+      <DependentUpon>carLoginNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="carLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="carLogin.designer.cs">
+      <DependentUpon>carLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dataQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dataQuery.Designer.cs">
+      <DependentUpon>dataQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fastReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fastReport.Designer.cs">
+      <DependentUpon>fastReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JHinterface.cs" />
+    <Compile Include="JHWebClient.cs" />
+    <Compile Include="mainPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainPanel.designer.cs">
+      <DependentUpon>mainPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NEIMENG_VMASDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NEIMENG_VMASDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NEIMENG_VMASDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NEIMENG_VMASDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NEIMENG_VMASDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NEIMENG_VMASDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="personelInf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="personelInf.designer.cs">
+      <DependentUpon>personelInf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="printer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="printer.Designer.cs">
+      <DependentUpon>printer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="registerPersonel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="registerPersonel.designer.cs">
+      <DependentUpon>registerPersonel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="autoPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="autoPrint.Designer.cs">
+      <DependentUpon>autoPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="云南报表\reportViewYNASM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="云南报表\reportViewYNASM.designer.cs">
+      <DependentUpon>reportViewYNASM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="云南报表\reportViewYNJzjs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="云南报表\reportViewYNJzjs.designer.cs">
+      <DependentUpon>reportViewYNJzjs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="云南报表\reportViewYNSdsCH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="云南报表\reportViewYNSdsCH.designer.cs">
+      <DependentUpon>reportViewYNSdsCH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="云南报表\reportViewYNZyjs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="云南报表\reportViewYNZyjs.designer.cs">
+      <DependentUpon>reportViewYNZyjs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="四川报表\reportViewSCJzjs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="四川报表\reportViewSCJzjs.designer.cs">
+      <DependentUpon>reportViewSCJzjs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="四川报表\reportViewSCSds.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="四川报表\reportViewSCSds.designer.cs">
+      <DependentUpon>reportViewSCSds.cs</DependentUpon>
+    </Compile>
+    <Compile Include="四川报表\reportViewSCVmas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="四川报表\reportViewSCVmas.designer.cs">
+      <DependentUpon>reportViewSCVmas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="四川报表\reportViewSCZyjs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="四川报表\reportViewSCZyjs.designer.cs">
+      <DependentUpon>reportViewSCZyjs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="国标报表\reportViewGBVmasBefore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="国标报表\reportViewGBVmasBefore.designer.cs">
+      <DependentUpon>reportViewGBVmasBefore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="国标报表\reportViewGBVmas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="国标报表\reportViewGBVmas.designer.cs">
+      <DependentUpon>reportViewGBVmas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="东软报表\reportViewDRASM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="东软报表\reportViewDRASM.designer.cs">
+      <DependentUpon>reportViewDRASM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="东软报表\reportViewDRJzjs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="东软报表\reportViewDRJzjs.designer.cs">
+      <DependentUpon>reportViewDRJzjs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="东软报表\reportViewDRLz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="东软报表\reportViewDRLz.designer.cs">
+      <DependentUpon>reportViewDRLz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="东软报表\reportViewDRSdsCH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="东软报表\reportViewDRSdsCH.designer.cs">
+      <DependentUpon>reportViewDRSdsCH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="东软报表\reportViewDRVmas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="东软报表\reportViewDRVmas.designer.cs">
+      <DependentUpon>reportViewDRVmas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="东软报表\reportViewDRVmasBefore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="东软报表\reportViewDRVmasBefore.designer.cs">
+      <DependentUpon>reportViewDRVmasBefore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="东软报表\reportViewDRZyjs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="东软报表\reportViewDRZyjs.designer.cs">
+      <DependentUpon>reportViewDRZyjs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="武汉报表\reportViewWHSdsCH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="武汉报表\reportViewWHSdsCH.designer.cs">
+      <DependentUpon>reportViewWHSdsCH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="武汉报表\reportViewWHVmas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="武汉报表\reportViewWHVmas.designer.cs">
+      <DependentUpon>reportViewWHVmas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="武汉报表\reportViewWHVmasBefore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="武汉报表\reportViewWHVmasBefore.designer.cs">
+      <DependentUpon>reportViewWHVmasBefore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="山东报表\reportViewSDLz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="山东报表\reportViewSDLz.designer.cs">
+      <DependentUpon>reportViewSDLz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="沈阳报表\reportViewSYLz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="沈阳报表\reportViewSYLz.designer.cs">
+      <DependentUpon>reportViewSYLz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="沈阳报表\reportViewSYSdsM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="沈阳报表\reportViewSYSdsM.designer.cs">
+      <DependentUpon>reportViewSYSdsM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="监利报表\reportViewJLASM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="监利报表\reportViewJLASM.designer.cs">
+      <DependentUpon>reportViewJLASM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="监利报表\reportViewJLJzjs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="监利报表\reportViewJLJzjs.designer.cs">
+      <DependentUpon>reportViewJLJzjs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="监利报表\reportViewJLSdsCH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="监利报表\reportViewJLSdsCH.designer.cs">
+      <DependentUpon>reportViewJLSdsCH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="监利报表\reportViewJLZyjs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="监利报表\reportViewJLZyjs.designer.cs">
+      <DependentUpon>reportViewJLZyjs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="江苏报表\reportViewJsASM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="江苏报表\reportViewJsASM.designer.cs">
+      <DependentUpon>reportViewJsASM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="江苏报表\reportViewJsJzjs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="江苏报表\reportViewJsJzjs.designer.cs">
+      <DependentUpon>reportViewJsJzjs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="江苏报表\reportViewJsLz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="江苏报表\reportViewJsLz.designer.cs">
+      <DependentUpon>reportViewJsLz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="江苏报表\reportViewJsSdsCH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="江苏报表\reportViewJsSdsCH.designer.cs">
+      <DependentUpon>reportViewJsSdsCH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="江苏报表\reportViewJsZyjs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="江苏报表\reportViewJsZyjs.designer.cs">
+      <DependentUpon>reportViewJsZyjs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="金华报表\reportViewJhVmasBefore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="金华报表\reportViewJhVmasBefore.designer.cs">
+      <DependentUpon>reportViewJhVmasBefore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="浙江报表\reportViewZeJVmasBefore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="浙江报表\reportViewZeJVmasBefore.designer.cs">
+      <DependentUpon>reportViewZeJVmasBefore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="怀化报表\reportViewHHASM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="怀化报表\reportViewHHASM.designer.cs">
+      <DependentUpon>reportViewHHASM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="怀化报表\reportViewHHJzjs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="怀化报表\reportViewHHJzjs.designer.cs">
+      <DependentUpon>reportViewHHJzjs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="怀化报表\reportViewHHSdsCH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="怀化报表\reportViewHHSdsCH.designer.cs">
+      <DependentUpon>reportViewHHSdsCH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="怀化报表\reportViewHHZyjs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="怀化报表\reportViewHHZyjs.designer.cs">
+      <DependentUpon>reportViewHHZyjs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="山东报表\reportViewSDVmas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="山东报表\reportViewSDVmas.designer.cs">
+      <DependentUpon>reportViewSDVmas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="山东报表\reportViewSDVmasBefore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="山东报表\reportViewSDVmasBefore.designer.cs">
+      <DependentUpon>reportViewSDVmasBefore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="山东报表\reportViewSDASM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="山东报表\reportViewSDASM.designer.cs">
+      <DependentUpon>reportViewSDASM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="山东报表\reportViewSDJzjs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="山东报表\reportViewSDJzjs.designer.cs">
+      <DependentUpon>reportViewSDJzjs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="山东报表\reportViewSDSdsCH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="山东报表\reportViewSDSdsCH.designer.cs">
+      <DependentUpon>reportViewSDSdsCH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="山东报表\reportViewSDZyjs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="山东报表\reportViewSDZyjs.designer.cs">
+      <DependentUpon>reportViewSDZyjs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="昭平报表\reportViewZPASM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="昭平报表\reportViewZPASM.designer.cs">
+      <DependentUpon>reportViewZPASM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="昭平报表\reportViewZPJzjs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="昭平报表\reportViewZPJzjs.designer.cs">
+      <DependentUpon>reportViewZPJzjs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="昭平报表\reportViewZPLz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="昭平报表\reportViewZPLz.designer.cs">
+      <DependentUpon>reportViewZPLz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="昭平报表\reportViewZPSdsCH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="昭平报表\reportViewZPSdsCH.designer.cs">
+      <DependentUpon>reportViewZPSdsCH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="昭平报表\reportViewZPZyjs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="昭平报表\reportViewZPZyjs.designer.cs">
+      <DependentUpon>reportViewZPZyjs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="枝江报表\reportViewZJASM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="枝江报表\reportViewZJASM.designer.cs">
+      <DependentUpon>reportViewZJASM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="枝江报表\reportViewZJJzjs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="枝江报表\reportViewZJJzjs.designer.cs">
+      <DependentUpon>reportViewZJJzjs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="枝江报表\reportViewZJSdsCH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="枝江报表\reportViewZJSdsCH.designer.cs">
+      <DependentUpon>reportViewZJSdsCH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="枝江报表\reportViewZJZyjs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="枝江报表\reportViewZJZyjs.designer.cs">
+      <DependentUpon>reportViewZJZyjs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="国标报表\reportViewGBASM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="国标报表\reportViewGBASM.designer.cs">
+      <DependentUpon>reportViewGBASM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="国标报表\reportViewGBJzjs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="国标报表\reportViewGBJzjs.designer.cs">
+      <DependentUpon>reportViewGBJzjs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="国标报表\reportViewGBLz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="国标报表\reportViewGBLz.designer.cs">
+      <DependentUpon>reportViewGBLz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="国标报表\reportViewGBSdsCH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="国标报表\reportViewGBSdsCH.designer.cs">
+      <DependentUpon>reportViewGBSdsCH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="国标报表\reportViewGBZyjs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="国标报表\reportViewGBZyjs.designer.cs">
+      <DependentUpon>reportViewGBZyjs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reportViwStatistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportViwStatistics.designer.cs">
+      <DependentUpon>reportViwStatistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="孝感报表\reportViewXGJzjs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="孝感报表\reportViewXGJzjs.designer.cs">
+      <DependentUpon>reportViewXGJzjs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reportViewSds.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportViewSds.designer.cs">
+      <DependentUpon>reportViewSds.cs</DependentUpon>
+    </Compile>
+    <Compile Include="孝感报表\reportViewXGSdsCH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="孝感报表\reportViewXGSdsCH.designer.cs">
+      <DependentUpon>reportViewXGSdsCH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reportViewVmas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportViewVmas.designer.cs">
+      <DependentUpon>reportViewVmas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reportViewVmasBefore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportViewVmasBefore.designer.cs">
+      <DependentUpon>reportViewVmasBefore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="孝感报表\reportViewXGZyjs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="孝感报表\reportViewXGZyjs.designer.cs">
+      <DependentUpon>reportViewXGZyjs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RMBCapitalization.cs" />
+    <Compile Include="staffLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="staffLogin.designer.cs">
+      <DependentUpon>staffLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="systemConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="systemConfig.Designer.cs">
+      <DependentUpon>systemConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="孝感报表\reportViewXGASM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="孝感报表\reportViewXGASM.designer.cs">
+      <DependentUpon>reportViewXGASM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reportSafeViwStatistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportSafeViwStatistics.designer.cs">
+      <DependentUpon>reportSafeViwStatistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reportViewPay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportViewPay.designer.cs">
+      <DependentUpon>reportViewPay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reportViwAniStatistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportViwAniStatistics.designer.cs">
+      <DependentUpon>reportViwAniStatistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="report票据.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="report票据.designer.cs">
+      <DependentUpon>report票据.cs</DependentUpon>
+    </Compile>
+    <Compile Include="恩施报表\reportViewBDASM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="恩施报表\reportViewBDASM.designer.cs">
+      <DependentUpon>reportViewBDASM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="恩施报表\reportViewBDJzjs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="恩施报表\reportViewBDJzjs.designer.cs">
+      <DependentUpon>reportViewBDJzjs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="恩施报表\reportViewBDSdsCH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="恩施报表\reportViewBDSdsCH.designer.cs">
+      <DependentUpon>reportViewBDSdsCH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="恩施报表\reportViewBDZyjs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="恩施报表\reportViewBDZyjs.designer.cs">
+      <DependentUpon>reportViewBDZyjs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="沈阳报表\reportViewSYASM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="沈阳报表\reportViewSYASM.designer.cs">
+      <DependentUpon>reportViewSYASM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="沈阳报表\reportViewSYJzjs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="沈阳报表\reportViewSYJzjs.designer.cs">
+      <DependentUpon>reportViewSYJzjs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="沈阳报表\reportViewSYSds.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="沈阳报表\reportViewSYSds.designer.cs">
+      <DependentUpon>reportViewSYSds.cs</DependentUpon>
+    </Compile>
+    <Compile Include="沈阳报表\reportViewSYSdsCH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="沈阳报表\reportViewSYSdsCH.designer.cs">
+      <DependentUpon>reportViewSYSdsCH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="沈阳报表\reportViewSYVmas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="沈阳报表\reportViewSYVmas.designer.cs">
+      <DependentUpon>reportViewSYVmas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="沈阳报表\reportViewSYVmasBefore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="沈阳报表\reportViewSYVmasBefore.designer.cs">
+      <DependentUpon>reportViewSYVmasBefore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="沈阳报表\reportViewSYZyjs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="沈阳报表\reportViewSYZyjs.designer.cs">
+      <DependentUpon>reportViewSYZyjs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="浙江报表\reportViewZeJASM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="浙江报表\reportViewZeJASM.designer.cs">
+      <DependentUpon>reportViewZeJASM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="浙江报表\reportViewZeJJzjs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="浙江报表\reportViewZeJJzjs.designer.cs">
+      <DependentUpon>reportViewZeJJzjs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="浙江报表\reportViewZeJSdsCH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="浙江报表\reportViewZeJSdsCH.designer.cs">
+      <DependentUpon>reportViewZeJSdsCH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="浙江报表\reportViewZeJZyjs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="浙江报表\reportViewZeJZyjs.designer.cs">
+      <DependentUpon>reportViewZeJZyjs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="江西报表\reportViewJxVmasBefore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="江西报表\reportViewJxVmasBefore.designer.cs">
+      <DependentUpon>reportViewJxVmasBefore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="甘肃报表\reportViewGS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="甘肃报表\reportViewGS.designer.cs">
+      <DependentUpon>reportViewGS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="安徽报表\reportViewAHASM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="安徽报表\reportViewAHASM.designer.cs">
+      <DependentUpon>reportViewAHASM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="安徽报表\reportViewAHJzjs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="安徽报表\reportViewAHJzjs.designer.cs">
+      <DependentUpon>reportViewAHJzjs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="安徽报表\reportViewAHLz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="安徽报表\reportViewAHLz.designer.cs">
+      <DependentUpon>reportViewAHLz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="安徽报表\reportViewAHSdsCH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="安徽报表\reportViewAHSdsCH.designer.cs">
+      <DependentUpon>reportViewAHSdsCH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="安徽报表\reportViewAHZyjs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="安徽报表\reportViewAHZyjs.designer.cs">
+      <DependentUpon>reportViewAHZyjs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="湘西报表\reportViewXXASM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="湘西报表\reportViewXXASM.designer.cs">
+      <DependentUpon>reportViewXXASM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="湘西报表\reportViewXXJzjs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="湘西报表\reportViewXXJzjs.designer.cs">
+      <DependentUpon>reportViewXXJzjs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="湘西报表\reportViewXXSdsCH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="湘西报表\reportViewXXSdsCH.designer.cs">
+      <DependentUpon>reportViewXXSdsCH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="湘西报表\reportViewXXZyjs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="湘西报表\reportViewXXZyjs.designer.cs">
+      <DependentUpon>reportViewXXZyjs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="罗定报表\reportViewLDASM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="罗定报表\reportViewLDASM.designer.cs">
+      <DependentUpon>reportViewLDASM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="罗定报表\reportViewLDJzjs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="罗定报表\reportViewLDJzjs.designer.cs">
+      <DependentUpon>reportViewLDJzjs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="罗定报表\reportViewLDSdsCH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="罗定报表\reportViewLDSdsCH.designer.cs">
+      <DependentUpon>reportViewLDSdsCH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="罗定报表\reportViewLDZyjs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="罗定报表\reportViewLDZyjs.designer.cs">
+      <DependentUpon>reportViewLDZyjs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="陕西报表\reportViewSXASM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="陕西报表\reportViewSXASM.designer.cs">
+      <DependentUpon>reportViewSXASM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="陕西报表\reportViewSXJzjs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="陕西报表\reportViewSXJzjs.designer.cs">
+      <DependentUpon>reportViewSXJzjs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="陕西报表\reportViewSXLz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="陕西报表\reportViewSXLz.designer.cs">
+      <DependentUpon>reportViewSXLz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="陕西报表\reportViewSXSdsCH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="陕西报表\reportViewSXSdsCH.designer.cs">
+      <DependentUpon>reportViewSXSdsCH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="陕西报表\reportViewSXZyjs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="陕西报表\reportViewSXZyjs.designer.cs">
+      <DependentUpon>reportViewSXZyjs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="长沙报表\reportViewCSASM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="长沙报表\reportViewCSASM.designer.cs">
+      <DependentUpon>reportViewCSASM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="长沙报表\reportViewCSJzjs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="长沙报表\reportViewCSJzjs.designer.cs">
+      <DependentUpon>reportViewCSJzjs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="长沙报表\reportViewCSSdsCH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="长沙报表\reportViewCSSdsCH.designer.cs">
+      <DependentUpon>reportViewCSSdsCH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="长沙报表\reportViewCSZyjs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="长沙报表\reportViewCSZyjs.designer.cs">
+      <DependentUpon>reportViewCSZyjs.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="carLoginHN.resx">
+      <DependentUpon>carLoginHN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="carLoginDali.resx">
+      <DependentUpon>carLoginDali.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="carLoginGA.resx">
+      <DependentUpon>carLoginGA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="carLoginHHZ.resx">
+      <DependentUpon>carLoginHHZ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="carLoginNew.resx">
+      <DependentUpon>carLoginNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="carLogin.resx">
+      <DependentUpon>carLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dataQuery.resx">
+      <DependentUpon>dataQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fastReport.resx">
+      <DependentUpon>fastReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainPanel.resx">
+      <DependentUpon>mainPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="personelInf.resx">
+      <DependentUpon>personelInf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="printer.resx">
+      <DependentUpon>printer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="registerPersonel.resx">
+      <DependentUpon>registerPersonel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportAsm.rdlc" />
+    <EmbeddedResource Include="autoPrint.resx">
+      <DependentUpon>autoPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="云南报表\reportViewYNASM.resx">
+      <DependentUpon>reportViewYNASM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="云南报表\reportViewYNJzjs.resx">
+      <DependentUpon>reportViewYNJzjs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="云南报表\reportViewYNSdsCH.resx">
+      <DependentUpon>reportViewYNSdsCH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="云南报表\reportViewYNZyjs.resx">
+      <DependentUpon>reportViewYNZyjs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="云南报表\ReportYNAsm.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="云南报表\ReportYNBTG.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="云南报表\ReportYNLUGDOWN.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="云南报表\ReportYNSDS.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="四川报表\ReportSCJzjs.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="四川报表\ReportSCSds.rdlc">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="四川报表\ReportSCVmas.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="四川报表\ReportSCZyjs.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="四川报表\reportViewSCJzjs.resx">
+      <DependentUpon>reportViewSCJzjs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="四川报表\reportViewSCSds.resx">
+      <DependentUpon>reportViewSCSds.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="四川报表\reportViewSCVmas.resx">
+      <DependentUpon>reportViewSCVmas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="四川报表\reportViewSCZyjs.resx">
+      <DependentUpon>reportViewSCZyjs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="国标报表\ReportGBVmasBefore.rdlc">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="国标报表\ReportGBVmas.rdlc">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="国标报表\reportViewGBVmasBefore.resx">
+      <DependentUpon>reportViewGBVmasBefore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="国标报表\reportViewGBVmas.resx">
+      <DependentUpon>reportViewGBVmas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="东软报表\ReportDRAsm.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="东软报表\ReportDRJzjs.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="东软报表\ReportDRLz.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="东软报表\ReportDRSds.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="东软报表\ReportDRVmas.rdlc">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="东软报表\ReportDRVmasBefore.rdlc">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="东软报表\ReportDRZyjs.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="东软报表\reportViewDRASM.resx">
+      <DependentUpon>reportViewDRASM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="东软报表\reportViewDRJzjs.resx">
+      <DependentUpon>reportViewDRJzjs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="东软报表\reportViewDRLz.resx">
+      <DependentUpon>reportViewDRLz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="东软报表\reportViewDRSdsCH.resx">
+      <DependentUpon>reportViewDRSdsCH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="东软报表\reportViewDRVmas.resx">
+      <DependentUpon>reportViewDRVmas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="东软报表\reportViewDRVmasBefore.resx">
+      <DependentUpon>reportViewDRVmasBefore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="东软报表\reportViewDRZyjs.resx">
+      <DependentUpon>reportViewDRZyjs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="恩施报表\ReportBDAsmO2.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="武汉报表\ReportWHSds.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="武汉报表\ReportWHVmas.rdlc">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="武汉报表\ReportWHVmasBefore.rdlc">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="武汉报表\reportViewWHSdsCH.resx">
+      <DependentUpon>reportViewWHSdsCH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="武汉报表\reportViewWHVmas.resx">
+      <DependentUpon>reportViewWHVmas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="武汉报表\reportViewWHVmasBefore.resx">
+      <DependentUpon>reportViewWHVmasBefore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="山东报表\ReportSDLz.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="山东报表\reportViewSDLz.resx">
+      <DependentUpon>reportViewSDLz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="沈阳报表\ReportSYLz.rdlc">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="沈阳报表\ReportSYSdsM.rdlc">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="沈阳报表\reportViewSYLz.resx">
+      <DependentUpon>reportViewSYLz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="沈阳报表\reportViewSYSdsM.resx">
+      <DependentUpon>reportViewSYSdsM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="监利报表\ReportJLAsm.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="监利报表\ReportJLJzjs.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="监利报表\ReportJLSds.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="监利报表\ReportJLZyjs.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="监利报表\reportViewJLASM.resx">
+      <DependentUpon>reportViewJLASM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="监利报表\reportViewJLJzjs.resx">
+      <DependentUpon>reportViewJLJzjs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="监利报表\reportViewJLSdsCH.resx">
+      <DependentUpon>reportViewJLSdsCH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="监利报表\reportViewJLZyjs.resx">
+      <DependentUpon>reportViewJLZyjs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="江苏报表\ReportJsAsm.rdlc">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="江苏报表\ReportJsJzjs.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="江苏报表\ReportJsLz.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="江苏报表\ReportJsSds.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="江苏报表\ReportJsZyjs.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="江苏报表\reportViewJsASM.resx">
+      <DependentUpon>reportViewJsASM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="江苏报表\reportViewJsJzjs.resx">
+      <DependentUpon>reportViewJsJzjs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="江苏报表\reportViewJsLz.resx">
+      <DependentUpon>reportViewJsLz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="江苏报表\reportViewJsSdsCH.resx">
+      <DependentUpon>reportViewJsSdsCH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="江苏报表\reportViewJsZyjs.resx">
+      <DependentUpon>reportViewJsZyjs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="安徽报表\ReportAHAsm.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="安徽报表\ReportAHJzjs.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="安徽报表\ReportAHLz.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="安徽报表\ReportAHSds.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="安徽报表\ReportAHZyjs.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="金华报表\ReportJh.rdlc">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="金华报表\reportViewJhVmasBefore.resx">
+      <DependentUpon>reportViewJhVmasBefore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="江西报表\ReportJiangxi.rdlc">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="浙江报表\ReportZeJVmasBefore.rdlc">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="浙江报表\reportViewZeJVmasBefore.resx">
+      <DependentUpon>reportViewZeJVmasBefore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="怀化报表\ReportHHAsm.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="怀化报表\ReportHHJzjs.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="怀化报表\ReportHHSds.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="怀化报表\ReportHHZyjs.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="怀化报表\reportViewHHASM.resx">
+      <DependentUpon>reportViewHHASM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="怀化报表\reportViewHHJzjs.resx">
+      <DependentUpon>reportViewHHJzjs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="怀化报表\reportViewHHSdsCH.resx">
+      <DependentUpon>reportViewHHSdsCH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="怀化报表\reportViewHHZyjs.resx">
+      <DependentUpon>reportViewHHZyjs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="山东报表\reportViewSDVmas.resx">
+      <DependentUpon>reportViewSDVmas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="山东报表\reportViewSDVmasBefore.resx">
+      <DependentUpon>reportViewSDVmasBefore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="山东报表\ReportSDVmas.rdlc">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="山东报表\ReportSDVmasBefore.rdlc">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="山东报表\reportViewSDASM.resx">
+      <DependentUpon>reportViewSDASM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="山东报表\reportViewSDJzjs.resx">
+      <DependentUpon>reportViewSDJzjs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="山东报表\reportViewSDSdsCH.resx">
+      <DependentUpon>reportViewSDSdsCH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="山东报表\reportViewSDZyjs.resx">
+      <DependentUpon>reportViewSDZyjs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="山东报表\ReportSDAsm.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="山东报表\ReportSDJzjs.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="山东报表\ReportSDSds.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="山东报表\ReportSDZyjs.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="昭平报表\ReportGZAsm.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="昭平报表\ReportGZJzjs.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="昭平报表\ReportGZLz.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="国标报表\ReportGBSds.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="国标报表\ReportGBZyjs.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="昭平报表\reportViewZPASM.resx">
+      <DependentUpon>reportViewZPASM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="昭平报表\reportViewZPJzjs.resx">
+      <DependentUpon>reportViewZPJzjs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="昭平报表\reportViewZPLz.resx">
+      <DependentUpon>reportViewZPLz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="昭平报表\reportViewZPSdsCH.resx">
+      <DependentUpon>reportViewZPSdsCH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="昭平报表\reportViewZPZyjs.resx">
+      <DependentUpon>reportViewZPZyjs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="枝江报表\reportViewZJASM.resx">
+      <DependentUpon>reportViewZJASM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="枝江报表\reportViewZJJzjs.resx">
+      <DependentUpon>reportViewZJJzjs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="枝江报表\reportViewZJSdsCH.resx">
+      <DependentUpon>reportViewZJSdsCH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="枝江报表\reportViewZJZyjs.resx">
+      <DependentUpon>reportViewZJZyjs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="枝江报表\ReportZJAsm.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="枝江报表\ReportZJJzjs.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="枝江报表\ReportZJSds.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="枝江报表\ReportZJZyjs.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="国标报表\ReportGBAsm.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="国标报表\ReportGBJzjs.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="国标报表\ReportGBLz.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="昭平报表\ReportGZSds.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="昭平报表\ReportGZZyjs.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="国标报表\reportViewGBASM.resx">
+      <DependentUpon>reportViewGBASM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="国标报表\reportViewGBJzjs.resx">
+      <DependentUpon>reportViewGBJzjs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="国标报表\reportViewGBLz.resx">
+      <DependentUpon>reportViewGBLz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="国标报表\reportViewGBSdsCH.resx">
+      <DependentUpon>reportViewGBSdsCH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="国标报表\reportViewGBZyjs.resx">
+      <DependentUpon>reportViewGBZyjs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="孝感报表\ReportXGJzjs.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportJzjs.rdlc" />
+    <EmbeddedResource Include="ReportSds.rdlc" />
+    <EmbeddedResource Include="ReportSdsCH.rdlc" />
+    <EmbeddedResource Include="ReportStatistic.rdlc" />
+    <EmbeddedResource Include="reportViwStatistics.resx">
+      <DependentUpon>reportViwStatistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="孝感报表\reportViewXGJzjs.resx">
+      <DependentUpon>reportViewXGJzjs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportViewSds.resx">
+      <DependentUpon>reportViewSds.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="孝感报表\reportViewXGSdsCH.resx">
+      <DependentUpon>reportViewXGSdsCH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportViewVmas.resx">
+      <DependentUpon>reportViewVmas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportViewVmasBefore.resx">
+      <DependentUpon>reportViewVmasBefore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="孝感报表\reportViewXGZyjs.resx">
+      <DependentUpon>reportViewXGZyjs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportVmas.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportVmasBefore.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportZyjs.rdlc" />
+    <EmbeddedResource Include="staffLogin.resx">
+      <DependentUpon>staffLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="systemConfig.resx">
+      <DependentUpon>systemConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportJzjsHebei.rdlc" />
+    <EmbeddedResource Include="ReportStatistics.rdlc" />
+    <EmbeddedResource Include="孝感报表\reportViewXGASM.resx">
+      <DependentUpon>reportViewXGASM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportSafeViwStatistics.resx">
+      <DependentUpon>reportSafeViwStatistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportSafeStatistics.rdlc" />
+    <EmbeddedResource Include="reportViewPay.resx">
+      <DependentUpon>reportViewPay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportViwAniStatistics.resx">
+      <DependentUpon>reportViwAniStatistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="report票据.resx">
+      <DependentUpon>report票据.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="孝感报表\ReportXGAsm.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="孝感报表\ReportXGSds.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="孝感报表\ReportXGZyjs.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="恩施报表\ReportBDAsm.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="恩施报表\ReportBDJzjs.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="恩施报表\ReportBDSds.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="恩施报表\ReportBDZyjs.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="恩施报表\reportViewBDASM.resx">
+      <DependentUpon>reportViewBDASM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="恩施报表\reportViewBDJzjs.resx">
+      <DependentUpon>reportViewBDJzjs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="恩施报表\reportViewBDSdsCH.resx">
+      <DependentUpon>reportViewBDSdsCH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="恩施报表\reportViewBDZyjs.resx">
+      <DependentUpon>reportViewBDZyjs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="沈阳报表\ReportSYAsm.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="沈阳报表\ReportSYJzjs.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="沈阳报表\ReportSYSds.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="沈阳报表\ReportSYSdsCH.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="沈阳报表\ReportSYVmas.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="沈阳报表\ReportSYVmasBefore.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="沈阳报表\ReportSYZyjs.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="沈阳报表\reportViewSYASM.resx">
+      <DependentUpon>reportViewSYASM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="沈阳报表\reportViewSYJzjs.resx">
+      <DependentUpon>reportViewSYJzjs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="沈阳报表\reportViewSYSds.resx">
+      <DependentUpon>reportViewSYSds.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="沈阳报表\reportViewSYSdsCH.resx">
+      <DependentUpon>reportViewSYSdsCH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="沈阳报表\reportViewSYVmas.resx">
+      <DependentUpon>reportViewSYVmas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="沈阳报表\reportViewSYVmasBefore.resx">
+      <DependentUpon>reportViewSYVmasBefore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="沈阳报表\reportViewSYZyjs.resx">
+      <DependentUpon>reportViewSYZyjs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="江西报表\reportViewJxVmasBefore.resx">
+      <DependentUpon>reportViewJxVmasBefore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="甘肃报表\ReportGs.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="甘肃报表\reportViewGS.resx">
+      <DependentUpon>reportViewGS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="退费票据.rdlc" />
+    <EmbeddedResource Include="年检信息.rdlc" />
+    <EmbeddedResource Include="票据.rdlc" />
+    <EmbeddedResource Include="湘西报表\ReportXXAsm.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="湘西报表\ReportXXBTG.rdlc">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="湘西报表\ReportXXLUGDOWN.rdlc">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="湘西报表\ReportXXSDS.rdlc">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="湘西报表\reportViewXXASM.resx">
+      <DependentUpon>reportViewXXASM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="湘西报表\reportViewXXJzjs.resx">
+      <DependentUpon>reportViewXXJzjs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="湘西报表\reportViewXXSdsCH.resx">
+      <DependentUpon>reportViewXXSdsCH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="湘西报表\reportViewXXZyjs.resx">
+      <DependentUpon>reportViewXXZyjs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="罗定报表\ReportLDAsm.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="罗定报表\ReportLDBTG.rdlc">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="罗定报表\ReportLDLUGDOWN.rdlc">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="罗定报表\ReportLDSDS.rdlc">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="罗定报表\reportViewLDASM.resx">
+      <DependentUpon>reportViewLDASM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="罗定报表\reportViewLDJzjs.resx">
+      <DependentUpon>reportViewLDJzjs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="罗定报表\reportViewLDSdsCH.resx">
+      <DependentUpon>reportViewLDSdsCH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="罗定报表\reportViewLDZyjs.resx">
+      <DependentUpon>reportViewLDZyjs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="长沙报表\ReportCSAsm.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="浙江报表\ReportZeJAsm.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="浙江报表\ReportZeJBTG.rdlc">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="浙江报表\ReportZeJLUGDOWN.rdlc">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="浙江报表\ReportZeJSDS.rdlc">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="浙江报表\reportViewZeJASM.resx">
+      <DependentUpon>reportViewZeJASM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="浙江报表\reportViewZeJJzjs.resx">
+      <DependentUpon>reportViewZeJJzjs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="浙江报表\reportViewZeJSdsCH.resx">
+      <DependentUpon>reportViewZeJSdsCH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="浙江报表\reportViewZeJZyjs.resx">
+      <DependentUpon>reportViewZeJZyjs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="安徽报表\reportViewAHASM.resx">
+      <DependentUpon>reportViewAHASM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="安徽报表\reportViewAHJzjs.resx">
+      <DependentUpon>reportViewAHJzjs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="安徽报表\reportViewAHLz.resx">
+      <DependentUpon>reportViewAHLz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="安徽报表\reportViewAHSdsCH.resx">
+      <DependentUpon>reportViewAHSdsCH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="安徽报表\reportViewAHZyjs.resx">
+      <DependentUpon>reportViewAHZyjs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="陕西报表\ReportSXJzjs.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="陕西报表\ReportSXLz.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="陕西报表\ReportSXSds.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="陕西报表\ReportSXZyjs.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="陕西报表\reportViewSXASM.resx">
+      <DependentUpon>reportViewSXASM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="陕西报表\reportViewSXJzjs.resx">
+      <DependentUpon>reportViewSXJzjs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="陕西报表\reportViewSXLz.resx">
+      <DependentUpon>reportViewSXLz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="陕西报表\reportViewSXSdsCH.resx">
+      <DependentUpon>reportViewSXSdsCH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="陕西报表\reportViewSXZyjs.resx">
+      <DependentUpon>reportViewSXZyjs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="陕西报表\ReportSXAsm.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="长沙报表\ReportCSSDS.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="长沙报表\ReportCSLUGDOWN.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="长沙报表\ReportCSBTG.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="长沙报表\reportViewCSASM.resx">
+      <DependentUpon>reportViewCSASM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="长沙报表\reportViewCSJzjs.resx">
+      <DependentUpon>reportViewCSJzjs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="长沙报表\reportViewCSSdsCH.resx">
+      <DependentUpon>reportViewCSSdsCH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="长沙报表\reportViewCSZyjs.resx">
+      <DependentUpon>reportViewCSZyjs.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="NEIMENG_VMASDataSet.xsc">
+      <DependentUpon>NEIMENG_VMASDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="NEIMENG_VMASDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NEIMENG_VMASDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NEIMENG_VMASDataSet.xss">
+      <DependentUpon>NEIMENG_VMASDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="NEIMENG_VMASDataSet1.xsc">
+      <DependentUpon>NEIMENG_VMASDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="NEIMENG_VMASDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NEIMENG_VMASDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NEIMENG_VMASDataSet1.xss">
+      <DependentUpon>NEIMENG_VMASDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="NEIMENG_VMASDataSet2.xsc">
+      <DependentUpon>NEIMENG_VMASDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="NEIMENG_VMASDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NEIMENG_VMASDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NEIMENG_VMASDataSet2.xss">
+      <DependentUpon>NEIMENG_VMASDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\carinfor\carinfor.csproj">
+      <Project>{82414900-9F68-46FC-B559-D204A1B839F1}</Project>
+      <Name>carinfor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DlWebClient\DlWebClient.csproj">
+      <Project>{1c8e0f8e-d965-4f11-8b3a-a17f00c185cb}</Project>
+      <Name>DlWebClient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EzWebClient\EzWebClient.csproj">
+      <Project>{9451bfd1-044f-416e-b45c-79283022d5f3}</Project>
+      <Name>EzWebClient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GAINTER\GAINTER.csproj">
+      <Project>{499908e1-215a-4333-8c67-535528907d5d}</Project>
+      <Name>GAINTER</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HhzWebClient\HhzWebClient\HhzWebClient.csproj">
+      <Project>{1a9e21ec-475c-4b1e-9c25-a8433a4207a7}</Project>
+      <Name>HhzWebClient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HnWebClient\HnWebClient.csproj">
+      <Project>{f664d01f-8a52-4144-b425-66d6ea03f7a9}</Project>
+      <Name>HnWebClient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\INIIO\INIIO.csproj">
+      <Project>{66AB13FC-AE00-42C8-B107-F375867E6363}</Project>
+      <Name>INIIO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JxWebClient\JxWebClient.csproj">
+      <Project>{339780ea-a82c-482a-8f18-d965e9b86ac1}</Project>
+      <Name>JxWebClient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NhWebClient\NhWebClient.csproj">
+      <Project>{e4e9bd5c-80d5-4778-8993-0446a5d45227}</Project>
+      <Name>NhWebClient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SYS_DAL\SYS_DAL.csproj">
+      <Project>{0C158118-DD0C-42DC-9B67-EA3055AE46CF}</Project>
+      <Name>SYS_DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SYS_MODEL\SYS_MODEL.csproj">
+      <Project>{E43A16D8-0BCA-42AB-B0DC-5D8FEE37958C}</Project>
+      <Name>SYS_MODEL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="logo.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
