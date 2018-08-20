@@ -48,7 +48,7 @@
     <Reference Include="System.Xml" />
     <Reference Include="VersionControl, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\VersionControl.dll</HintPath>
+      <HintPath>..\exhaustLogin\bin\Debug\VersionControl.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

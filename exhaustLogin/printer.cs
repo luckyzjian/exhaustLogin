@@ -14069,6 +14069,89 @@ namespace exhaustLogin
                                 report.SetParameters(rptparaSdsCh);
                             }
                             break;
+                        case "SDSM":
+                            sdsdata = sdsdal.Get_SDS(selectID[0]);
+                            ReportParameter[] rptparaSdsM =
+                            {
+                                new ReportParameter("parameterLsh", carbg.LSH),
+                    new ReportParameter("parameterStationName", carbg.JCZMC),
+                    new ReportParameter("parameterJcrq", carbg.JCSJ.ToString("yyyy-MM-dd HH:mm:ss")),
+                    new ReportParameter("parameterCzy", carbg.CZY),
+                    new ReportParameter("parameterJsy", carbg.JSY),
+                    new ReportParameter("parameterClxh", carbg.XH),
+                    new ReportParameter("parameterScqy",carbg.SCQY),
+                    new ReportParameter("parameterJzzl", carbg.JZZL),
+                    new ReportParameter("parameterZzl", carbg.ZZL),
+                    new ReportParameter("parameterBsqxs",carbg.BSQXS),
+                    new ReportParameter("parameterJqfs",carbg.JQFS),
+                    new ReportParameter("parameterFdjxh",carbg.FDJXH),
+                    new ReportParameter("parameterGyfs",carbg.GYFS),
+                    new ReportParameter("parameterRlzl",carbg.RLZL),
+                    new ReportParameter("parameterDws",carbg.DWS),
+                    new ReportParameter("parameterXslc",carbg.XSLC+"km"),
+                    new ReportParameter("parameterFdjpl",carbg.FDJPL),
+                    new ReportParameter("parameterZcrq", carbg.ZCRQ.ToString("D")),
+                    new ReportParameter("parameterCCRQ", carbg.SCRQ.ToString("D")),
+                    new ReportParameter("parameterCCS", carbg.CCS),
+                    new ReportParameter("parameterCllx",carbg.CLLX),
+                    new ReportParameter("parameterQdfs",carbg.QDXS),
+                    new ReportParameter("parameterChzz",carbg.CHZZ),
+                    new ReportParameter("parameterClph",carbg.CLHP),
+                    new ReportParameter("parameterCpys",carbg.CPYS),
+                    new ReportParameter("parameterClsbm",carbg.CLSBM),
+                    new ReportParameter("parameterCz",carbg.CZ),
+                    new ReportParameter("parameterSBMC",sdsdata.SBMC),
+                    new ReportParameter("parameterSBXH",sdsdata.SBXH),
+                    new ReportParameter("parameterSBBH",sdsdata.FXYBH),
+                    new ReportParameter("parameterFxyxh",sdsdata.FXYXH),
+                    new ReportParameter("parameterFxybh",sdsdata.FXYBH),
+                    new ReportParameter("parameterFxycj",sdsdata.FXYZZC),
+                    new ReportParameter("parameterZsjcj",sdsdata.ZSJZZC),
+                    new ReportParameter("parameterZsjxh",sdsdata.ZSJXH),
+                    new ReportParameter("parameterZsjbh",sdsdata.ZSJBH),
+                    new ReportParameter("parameterCMA",imageCMA),
+                    new ReportParameter("parameterRZBH",rzbh),
+                    new ReportParameter("parameterSbzzc",sdsdata.SBZZC),
+                    new ReportParameter("parameterZZC",sdsdata.FXYZZC),
+                    new ReportParameter("parameterWd",sdsdata.WD+"℃"),
+                    new ReportParameter("parameterDqy",sdsdata.DQY+"kPa"),
+                    new ReportParameter("parameterSd",sdsdata.SD+"%"),
+                    new ReportParameter("parameterLOWHC",sdsdata.HCLOWCLZ),
+                    new ReportParameter("parameterLOWHCXZ","≤"+sdsdata.HCLOWXZ),
+                    new ReportParameter("parameterLOWCO",double.Parse(sdsdata.COLOWCLZ).ToString("0.00")),
+                    new ReportParameter("parameterLOWCOXZ","≤"+double.Parse(sdsdata.COLOWXZ).ToString("0.0")),
+                    new ReportParameter("parameterLOWPD",sdsdata.LOWPD),
+                    new ReportParameter("parameterHIGHCO",double.Parse(sdsdata.COHIGHCLZ).ToString("0.00")),
+                    new ReportParameter("parameterHIGHCOXZ",sdsdata.COHIGHXZ==""?"—":"≤"+double.Parse(sdsdata.COHIGHXZ).ToString("0.0")),
+                    new ReportParameter("parameterHIGHHC",sdsdata.HCHIGHCLZ),
+                    new ReportParameter("parameterHIGHHCXZ",sdsdata.HCHIGHXZ==""?"—":"≤"+sdsdata.HCHIGHXZ),
+                    new ReportParameter("parameterHIGHPD",sdsdata.HIGHPD==""?"—":sdsdata.HIGHPD),
+
+                    new ReportParameter("parameterLOWZS",sdsdata.ZSLOW),
+                    new ReportParameter("parameterHIGHZS",sdsdata.ZSHIGH),
+                    new ReportParameter("parameterLOWCOXZZ",sdsdata.COLOWXXZ),
+                    new ReportParameter("parameterHIGHCOXZZ",sdsdata.COHIGHXXZ),
+                    new ReportParameter("parameterLOWCOXYZ",sdsdata.COLOWXYZ),
+                    new ReportParameter("parameterHIGHCOXYZ",sdsdata.COHIGHXYZ),
+                    new ReportParameter("parameterLOWCO2XYZ",sdsdata.CO2LOWXYZ),
+                    new ReportParameter("parameterHIGHCO2XYZ",sdsdata.CO2HIGHXYZ),
+                    new ReportParameter("parameterLOWCO2",double.Parse(sdsdata.CO2LOW).ToString("0.00")),
+                    new ReportParameter("parameterHIGHCO2",double.Parse(sdsdata.CO2HIGH).ToString("0.00")),
+                    new ReportParameter("parameterLOWHCXYZ",sdsdata.HCLOWXYZ),
+                    new ReportParameter("parameterHIGHHCXYZ",sdsdata.HCHIGHXYZ),
+
+                    new ReportParameter("parameterZHPD",(sdsdata.ZHPD=="合格")?"通过":"未通过"),
+                    new ReportParameter("parameterJDTEL",mainPanel.otherinf.JDDH),
+                    new ReportParameter("parameterFWTEL",mainPanel.otherinf.FWDH),
+                    new ReportParameter("parameterJczdz",mainPanel.stationinfmodel.STATIONADD),
+                    new ReportParameter("parameterBGRQ",DateTime.Now.ToString("D")),
+                    new ReportParameter("parameterJCZMC",mainPanel.stationinfmodel.STATIONNAME)
+                            };
+                            report.EnableExternalImages = true;
+                            report.ReportEmbeddedResource = "exhaustLogin.沈阳报表.ReportSYSdsM.rdlc";
+                            report.SetParameters(rptparaSdsM);
+                            break;
+
                         case "ZYJS":
                             zyjsdata = zyjsdal.Get_Zyjs(selectID[0]);
                             ReportParameter[] rptparaZyjs =

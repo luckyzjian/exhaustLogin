@@ -111,12 +111,10 @@
             this.panelEx2 = new DevComponents.DotNetBar.PanelEx();
             this.textBoxHDZZL = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX19 = new DevComponents.DotNetBar.LabelX();
-            this.textBoxFDJSCQY = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX20 = new DevComponents.DotNetBar.LabelX();
+            this.textBoxFDJSCQY = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.textBoxSCS = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX21 = new DevComponents.DotNetBar.LabelX();
-            this.textBoxFDJXH = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.labelX22 = new DevComponents.DotNetBar.LabelX();
             this.comboBoxCLZL = new DevComponents.DotNetBar.Controls.ComboBoxEx();
             this.labelX23 = new DevComponents.DotNetBar.LabelX();
             this.labelX9 = new DevComponents.DotNetBar.LabelX();
@@ -126,6 +124,8 @@
             this.labelX7 = new DevComponents.DotNetBar.LabelX();
             this.dateZCRQ = new DevComponents.Editors.DateTimeAdv.DateTimeInput();
             this.labelX6 = new DevComponents.DotNetBar.LabelX();
+            this.textBoxFDJXH = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.labelX22 = new DevComponents.DotNetBar.LabelX();
             this.textBoxJZZL = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.comboBoxQDXS = new DevComponents.DotNetBar.Controls.ComboBoxEx();
             this.comboBoxSYXZ = new DevComponents.DotNetBar.Controls.ComboBoxEx();
@@ -256,18 +256,19 @@
             this.toolStripMenuItem1,
             this.toolStripMenuItem2});
             this.contextMenuStrip1.Name = "contextMenuStrip2";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(101, 48);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(153, 70);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(100, 22);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.toolStripMenuItem1.Text = "删除";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(100, 22);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
             this.toolStripMenuItem2.Text = "刷新";
             this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
@@ -1356,17 +1357,6 @@
             this.labelX19.TabIndex = 42;
             this.labelX19.Text = "核定载质量";
             // 
-            // textBoxFDJSCQY
-            // 
-            // 
-            // 
-            // 
-            this.textBoxFDJSCQY.Border.Class = "TextBoxBorder";
-            this.textBoxFDJSCQY.Location = new System.Drawing.Point(83, 31);
-            this.textBoxFDJSCQY.Name = "textBoxFDJSCQY";
-            this.textBoxFDJSCQY.Size = new System.Drawing.Size(160, 21);
-            this.textBoxFDJSCQY.TabIndex = 41;
-            // 
             // labelX20
             // 
             // 
@@ -1378,6 +1368,17 @@
             this.labelX20.Size = new System.Drawing.Size(84, 23);
             this.labelX20.TabIndex = 40;
             this.labelX20.Text = "发动机生产商";
+            // 
+            // textBoxFDJSCQY
+            // 
+            // 
+            // 
+            // 
+            this.textBoxFDJSCQY.Border.Class = "TextBoxBorder";
+            this.textBoxFDJSCQY.Location = new System.Drawing.Point(83, 31);
+            this.textBoxFDJSCQY.Name = "textBoxFDJSCQY";
+            this.textBoxFDJSCQY.Size = new System.Drawing.Size(160, 21);
+            this.textBoxFDJSCQY.TabIndex = 41;
             // 
             // textBoxSCS
             // 
@@ -1401,29 +1402,6 @@
             this.labelX21.Size = new System.Drawing.Size(77, 23);
             this.labelX21.TabIndex = 38;
             this.labelX21.Text = "车辆生产商";
-            // 
-            // textBoxFDJXH
-            // 
-            // 
-            // 
-            // 
-            this.textBoxFDJXH.Border.Class = "TextBoxBorder";
-            this.textBoxFDJXH.Location = new System.Drawing.Point(358, 56);
-            this.textBoxFDJXH.Name = "textBoxFDJXH";
-            this.textBoxFDJXH.Size = new System.Drawing.Size(144, 21);
-            this.textBoxFDJXH.TabIndex = 37;
-            // 
-            // labelX22
-            // 
-            // 
-            // 
-            // 
-            this.labelX22.BackgroundStyle.Class = "";
-            this.labelX22.Location = new System.Drawing.Point(269, 56);
-            this.labelX22.Name = "labelX22";
-            this.labelX22.Size = new System.Drawing.Size(71, 23);
-            this.labelX22.TabIndex = 36;
-            this.labelX22.Text = "发动机型号";
             // 
             // comboBoxCLZL
             // 
@@ -1565,6 +1543,29 @@
             this.labelX6.Size = new System.Drawing.Size(70, 23);
             this.labelX6.TabIndex = 10;
             this.labelX6.Text = "使用性质";
+            // 
+            // textBoxFDJXH
+            // 
+            // 
+            // 
+            // 
+            this.textBoxFDJXH.Border.Class = "TextBoxBorder";
+            this.textBoxFDJXH.Location = new System.Drawing.Point(358, 56);
+            this.textBoxFDJXH.Name = "textBoxFDJXH";
+            this.textBoxFDJXH.Size = new System.Drawing.Size(144, 21);
+            this.textBoxFDJXH.TabIndex = 37;
+            // 
+            // labelX22
+            // 
+            // 
+            // 
+            // 
+            this.labelX22.BackgroundStyle.Class = "";
+            this.labelX22.Location = new System.Drawing.Point(269, 56);
+            this.labelX22.Name = "labelX22";
+            this.labelX22.Size = new System.Drawing.Size(71, 23);
+            this.labelX22.TabIndex = 36;
+            this.labelX22.Text = "发动机型号";
             // 
             // textBoxJZZL
             // 

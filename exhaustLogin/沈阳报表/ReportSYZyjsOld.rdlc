@@ -2378,6 +2378,800 @@
           <VerticalAlign>Middle</VerticalAlign>
         </Style>
       </Textbox>
+      <Rectangle Name="Rectangle1">
+        <ReportItems>
+          <Line Name="Line1">
+            <Top>1.42242cm</Top>
+            <Height>0cm</Height>
+            <Width>14.67112cm</Width>
+            <Style>
+              <Border>
+                <Style>Solid</Style>
+              </Border>
+            </Style>
+          </Line>
+          <Line Name="Line2">
+            <Top>2.16971cm</Top>
+            <Left>0.00001cm</Left>
+            <Height>0cm</Height>
+            <Width>14.67111cm</Width>
+            <ZIndex>1</ZIndex>
+            <Style>
+              <Border>
+                <Style>Solid</Style>
+              </Border>
+            </Style>
+          </Line>
+          <Line Name="Line3">
+            <Top>2.88408cm</Top>
+            <Left>0.00001cm</Left>
+            <Height>0cm</Height>
+            <Width>14.67111cm</Width>
+            <ZIndex>2</ZIndex>
+            <Style>
+              <Border>
+                <Style>Solid</Style>
+              </Border>
+            </Style>
+          </Line>
+          <Line Name="Line4">
+            <Top>3.572cm</Top>
+            <Left>0.00001cm</Left>
+            <Height>0cm</Height>
+            <Width>14.67111cm</Width>
+            <ZIndex>3</ZIndex>
+            <Style>
+              <Border>
+                <Style>Solid</Style>
+              </Border>
+            </Style>
+          </Line>
+          <Line Name="Line5">
+            <Left>3.22792cm</Left>
+            <Height>4.34575cm</Height>
+            <Width>0cm</Width>
+            <ZIndex>4</ZIndex>
+            <Style>
+              <Border>
+                <Style>Solid</Style>
+              </Border>
+            </Style>
+          </Line>
+          <Line Name="Line6">
+            <Left>6.3566cm</Left>
+            <Height>3.572cm</Height>
+            <Width>0cm</Width>
+            <ZIndex>5</ZIndex>
+            <Style>
+              <Border>
+                <Style>Solid</Style>
+              </Border>
+            </Style>
+          </Line>
+          <Textbox Name="Textbox66">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>内　容</Value>
+                    <Style>
+                      <FontFamily>宋体</FontFamily>
+                      <FontSize>10.5pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox15</rd:DefaultName>
+            <Top>0.75186cm</Top>
+            <Left>0.29513cm</Left>
+            <Height>0.52944cm</Height>
+            <Width>2.7564cm</Width>
+            <ZIndex>6</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <VerticalAlign>Middle</VerticalAlign>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox68">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>限值</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontFamily>宋体</FontFamily>
+                      <FontSize>10.5pt</FontSize>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                      <Color>#000000</Color>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox15</rd:DefaultName>
+            <Top>2.27554cm</Top>
+            <Left>0.29513cm</Left>
+            <Height>0.48479cm</Height>
+            <Width>2.7564cm</Width>
+            <ZIndex>7</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <VerticalAlign>Middle</VerticalAlign>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox70">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>合格判定</Value>
+                    <Style>
+                      <FontFamily>宋体</FontFamily>
+                      <FontSize>10.5pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox15</rd:DefaultName>
+            <Top>3.64255cm</Top>
+            <Left>0.29513cm</Left>
+            <Height>0.6cm</Height>
+            <Width>2.7564cm</Width>
+            <ZIndex>8</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <VerticalAlign>Middle</VerticalAlign>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox71">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>怠 速 转 速(r/min)</Value>
+                    <Style>
+                      <FontFamily>宋体</FontFamily>
+                      <FontSize>10.5pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox15</rd:DefaultName>
+            <Top>0.08131cm</Top>
+            <Left>3.36903cm</Left>
+            <Height>1.16473cm</Height>
+            <Width>2.7564cm</Width>
+            <ZIndex>9</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <VerticalAlign>Middle</VerticalAlign>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox73">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>光吸收系数最后三次测量k值（m</Value>
+                    <Style>
+                      <FontFamily>宋体</FontFamily>
+                      <FontSize>10.5pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Right</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox15</rd:DefaultName>
+            <Top>0.08131cm</Top>
+            <Left>6.71819cm</Left>
+            <Height>0.6cm</Height>
+            <Width>6.38119cm</Width>
+            <ZIndex>10</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <VerticalAlign>Middle</VerticalAlign>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox109">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=Parameters!parameterDSZS.Value</Value>
+                    <Style>
+                      <FontFamily>宋体</FontFamily>
+                      <FontSize>10.5pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox15</rd:DefaultName>
+            <Top>1.52825cm</Top>
+            <Left>3.40431cm</Left>
+            <Height>0.46507cm</Height>
+            <Width>2.7564cm</Width>
+            <ZIndex>11</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <VerticalAlign>Middle</VerticalAlign>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox111">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value />
+                    <Style>
+                      <FontFamily>宋体</FontFamily>
+                      <FontSize>10.5pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox15</rd:DefaultName>
+            <Top>2.98991cm</Top>
+            <Left>3.42381cm</Left>
+            <Height>0.46507cm</Height>
+            <Width>2.7564cm</Width>
+            <ZIndex>12</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <VerticalAlign>Middle</VerticalAlign>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox112">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=Parameters!parameterHGPD.Value</Value>
+                    <Style>
+                      <FontFamily>宋体</FontFamily>
+                      <FontSize>10.5pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox15</rd:DefaultName>
+            <Top>3.74839cm</Top>
+            <Left>3.42381cm</Left>
+            <Height>0.46507cm</Height>
+            <Width>10.94557cm</Width>
+            <ZIndex>13</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <VerticalAlign>Middle</VerticalAlign>
+            </Style>
+          </Textbox>
+          <Line Name="Line7">
+            <Top>0.75186cm</Top>
+            <Left>6.3566cm</Left>
+            <Height>0cm</Height>
+            <Width>8.31452cm</Width>
+            <ZIndex>14</ZIndex>
+            <Style>
+              <Border>
+                <Style>Solid</Style>
+              </Border>
+            </Style>
+          </Line>
+          <Textbox Name="Textbox8">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=Parameters!parameterXZ.Value</Value>
+                    <Style>
+                      <FontFamily>宋体</FontFamily>
+                      <FontSize>10.5pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox8</rd:DefaultName>
+            <Top>2.24027cm</Top>
+            <Left>6.53299cm</Left>
+            <Height>0.46507cm</Height>
+            <Width>7.83639cm</Width>
+            <ZIndex>15</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <VerticalAlign>Middle</VerticalAlign>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox9">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=Parameters!parameterPJZ.Value</Value>
+                    <Style>
+                      <FontFamily>宋体</FontFamily>
+                      <FontSize>10.5pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox8</rd:DefaultName>
+            <Top>3.00109cm</Top>
+            <Left>6.53299cm</Left>
+            <Height>0.46507cm</Height>
+            <Width>7.83639cm</Width>
+            <ZIndex>16</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <VerticalAlign>Middle</VerticalAlign>
+            </Style>
+          </Textbox>
+          <Line Name="Line8">
+            <Top>0.75186cm</Top>
+            <Left>9.02889cm</Left>
+            <Height>1.41785cm</Height>
+            <Width>0cm</Width>
+            <ZIndex>17</ZIndex>
+            <Style>
+              <Border>
+                <Style>Solid</Style>
+              </Border>
+            </Style>
+          </Line>
+          <Line Name="Line9">
+            <Top>0.75186cm</Top>
+            <Left>11.85994cm</Left>
+            <Height>1.41785cm</Height>
+            <Width>0cm</Width>
+            <ZIndex>18</ZIndex>
+            <Style>
+              <Border>
+                <Style>Solid</Style>
+              </Border>
+            </Style>
+          </Line>
+          <Textbox Name="Textbox113">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>1</Value>
+                    <Style>
+                      <FontFamily>宋体</FontFamily>
+                      <FontSize>10.5pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox15</rd:DefaultName>
+            <Top>0.82242cm</Top>
+            <Left>6.46243cm</Left>
+            <Height>0.46507cm</Height>
+            <Width>2.39007cm</Width>
+            <ZIndex>19</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <VerticalAlign>Middle</VerticalAlign>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox114">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>2</Value>
+                    <Style>
+                      <FontFamily>宋体</FontFamily>
+                      <FontSize>10.5pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox15</rd:DefaultName>
+            <Top>0.82242cm</Top>
+            <Left>9.20528cm</Left>
+            <Height>0.46507cm</Height>
+            <Width>2.39007cm</Width>
+            <ZIndex>20</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <VerticalAlign>Middle</VerticalAlign>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox116">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=Parameters!parameterFIRSTDATA.Value</Value>
+                    <Style>
+                      <FontFamily>宋体</FontFamily>
+                      <FontSize>10.5pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox15</rd:DefaultName>
+            <Top>1.52825cm</Top>
+            <Left>6.46243cm</Left>
+            <Height>0.46507cm</Height>
+            <Width>2.39007cm</Width>
+            <ZIndex>21</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <VerticalAlign>Middle</VerticalAlign>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox117">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=Parameters!parameterSECONDDATA.Value</Value>
+                    <Style>
+                      <FontFamily>宋体</FontFamily>
+                      <FontSize>10.5pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox15</rd:DefaultName>
+            <Top>1.52825cm</Top>
+            <Left>9.20528cm</Left>
+            <Height>0.46507cm</Height>
+            <Width>2.39007cm</Width>
+            <ZIndex>22</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <VerticalAlign>Middle</VerticalAlign>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox118">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=Parameters!parameterTHIRDDATA.Value</Value>
+                    <Style>
+                      <FontFamily>宋体</FontFamily>
+                      <FontSize>10.5pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox15</rd:DefaultName>
+            <Top>1.52825cm</Top>
+            <Left>12.00105cm</Left>
+            <Height>0.46507cm</Height>
+            <Width>2.39007cm</Width>
+            <ZIndex>23</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <VerticalAlign>Middle</VerticalAlign>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox115">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>3</Value>
+                    <Style>
+                      <FontFamily>宋体</FontFamily>
+                      <FontSize>10.5pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox15</rd:DefaultName>
+            <Top>0.82242cm</Top>
+            <Left>12.03633cm</Left>
+            <Height>0.46507cm</Height>
+            <Width>2.39007cm</Width>
+            <ZIndex>24</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <VerticalAlign>Middle</VerticalAlign>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox67">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>测 量 值</Value>
+                    <Style>
+                      <FontFamily>宋体</FontFamily>
+                      <FontSize>10.5pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox15</rd:DefaultName>
+            <Top>1.52825cm</Top>
+            <Left>0.29512cm</Left>
+            <Height>0.46507cm</Height>
+            <Width>2.7564cm</Width>
+            <ZIndex>25</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <VerticalAlign>Middle</VerticalAlign>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox110">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value />
+                    <Style>
+                      <FontFamily>宋体</FontFamily>
+                      <FontSize>10.5pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox15</rd:DefaultName>
+            <Top>2.27554cm</Top>
+            <Left>3.36903cm</Left>
+            <Height>0.46507cm</Height>
+            <Width>2.7564cm</Width>
+            <ZIndex>26</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <VerticalAlign>Middle</VerticalAlign>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox69">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>平 均 值</Value>
+                    <Style>
+                      <FontFamily>宋体</FontFamily>
+                      <FontSize>10.5pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox15</rd:DefaultName>
+            <Top>2.98991cm</Top>
+            <Left>0.29512cm</Left>
+            <Height>0.47625cm</Height>
+            <Width>2.7564cm</Width>
+            <ZIndex>27</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <VerticalAlign>Middle</VerticalAlign>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox130">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>)</Value>
+                    <Style>
+                      <FontFamily>宋体</FontFamily>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Left</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox15</rd:DefaultName>
+            <Top>0.16979cm</Top>
+            <Left>13.63981cm</Left>
+            <Height>0.44096cm</Height>
+            <Width>0.2743cm</Width>
+            <ZIndex>28</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <VerticalAlign>Middle</VerticalAlign>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox129">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>-1</Value>
+                    <Style>
+                      <FontFamily>宋体</FontFamily>
+                      <FontSize>6pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox15</rd:DefaultName>
+            <Top>0.16979cm</Top>
+            <Left>13.20521cm</Left>
+            <Height>0.38806cm</Height>
+            <Width>0.33759cm</Width>
+            <ZIndex>29</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <VerticalAlign>Middle</VerticalAlign>
+            </Style>
+          </Textbox>
+        </ReportItems>
+        <KeepTogether>true</KeepTogether>
+        <Top>18.1306cm</Top>
+        <Left>0.86466cm</Left>
+        <Height>4.34575cm</Height>
+        <Width>14.67112cm</Width>
+        <ZIndex>62</ZIndex>
+        <Style>
+          <Border>
+            <Style>Solid</Style>
+          </Border>
+        </Style>
+      </Rectangle>
       <Textbox Name="Textbox74">
         <CanGrow>true</CanGrow>
         <KeepTogether>true</KeepTogether>
@@ -2409,11 +3203,11 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox15</rd:DefaultName>
-        <Top>21.06524cm</Top>
+        <Top>22.97024cm</Top>
         <Left>0.81357cm</Left>
         <Height>0.6cm</Height>
         <Width>1.34558cm</Width>
-        <ZIndex>62</ZIndex>
+        <ZIndex>63</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -2445,11 +3239,11 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox16</rd:DefaultName>
-        <Top>21.06524cm</Top>
+        <Top>22.97024cm</Top>
         <Left>2.15914cm</Left>
         <Height>0.6cm</Height>
         <Width>3.45676cm</Width>
-        <ZIndex>63</ZIndex>
+        <ZIndex>64</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -2491,11 +3285,11 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox15</rd:DefaultName>
-        <Top>21.06524cm</Top>
+        <Top>22.97024cm</Top>
         <Left>6.18258cm</Left>
         <Height>0.6cm</Height>
         <Width>1.73789cm</Width>
-        <ZIndex>64</ZIndex>
+        <ZIndex>65</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -2527,11 +3321,11 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox16</rd:DefaultName>
-        <Top>21.06524cm</Top>
+        <Top>22.97024cm</Top>
         <Left>8.24939cm</Left>
         <Height>0.6cm</Height>
         <Width>3.68509cm</Width>
-        <ZIndex>65</ZIndex>
+        <ZIndex>66</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -2562,11 +3356,11 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox15</rd:DefaultName>
-        <Top>21.84163cm</Top>
+        <Top>23.74663cm</Top>
         <Left>0.81357cm</Left>
         <Height>0.56443cm</Height>
         <Width>6.82992cm</Width>
-        <ZIndex>66</ZIndex>
+        <ZIndex>67</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -2594,11 +3388,11 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox15</rd:DefaultName>
-        <Top>22.47661cm</Top>
+        <Top>24.38161cm</Top>
         <Left>0.81357cm</Left>
         <Height>0.56443cm</Height>
         <Width>6.82992cm</Width>
-        <ZIndex>67</ZIndex>
+        <ZIndex>68</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -2626,11 +3420,11 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox15</rd:DefaultName>
-        <Top>23.78186cm</Top>
+        <Top>25.68686cm</Top>
         <Left>1.15978cm</Left>
         <Height>0.56443cm</Height>
         <Width>2.04096cm</Width>
-        <ZIndex>68</ZIndex>
+        <ZIndex>69</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -2658,11 +3452,11 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox15</rd:DefaultName>
-        <Top>23.14688cm</Top>
+        <Top>25.05188cm</Top>
         <Left>1.15978cm</Left>
         <Height>0.56443cm</Height>
         <Width>2.04096cm</Width>
-        <ZIndex>69</ZIndex>
+        <ZIndex>70</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -2690,11 +3484,11 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox15</rd:DefaultName>
-        <Top>24.71158cm</Top>
+        <Top>25.98158cm</Top>
         <Left>8.5669cm</Left>
         <Height>0.49387cm</Height>
         <Width>9.81417cm</Width>
-        <ZIndex>70</ZIndex>
+        <ZIndex>71</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -2722,11 +3516,11 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox15</rd:DefaultName>
-        <Top>25.34656cm</Top>
+        <Top>26.61656cm</Top>
         <Left>12.62679cm</Left>
         <Height>0.56443cm</Height>
         <Width>5.75428cm</Width>
-        <ZIndex>71</ZIndex>
+        <ZIndex>72</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -2754,11 +3548,11 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox15</rd:DefaultName>
-        <Top>23.14688cm</Top>
+        <Top>25.05188cm</Top>
         <Left>3.30657cm</Left>
         <Height>0.56443cm</Height>
         <Width>4.33692cm</Width>
-        <ZIndex>72</ZIndex>
+        <ZIndex>73</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -2786,11 +3580,11 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox15</rd:DefaultName>
-        <Top>23.78186cm</Top>
+        <Top>25.68686cm</Top>
         <Left>3.30657cm</Left>
         <Height>0.56443cm</Height>
         <Width>4.33692cm</Width>
-        <ZIndex>73</ZIndex>
+        <ZIndex>74</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -2826,7 +3620,7 @@
         <Left>5.19034cm</Left>
         <Height>0.83213cm</Height>
         <Width>9.21712cm</Width>
-        <ZIndex>74</ZIndex>
+        <ZIndex>75</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -2869,11 +3663,11 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox15</rd:DefaultName>
-        <Top>21.06524cm</Top>
+        <Top>22.97024cm</Top>
         <Left>12.46163cm</Left>
         <Height>0.6cm</Height>
         <Width>2.12122cm</Width>
-        <ZIndex>75</ZIndex>
+        <ZIndex>76</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -2905,11 +3699,11 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox16</rd:DefaultName>
-        <Top>21.06524cm</Top>
+        <Top>22.97024cm</Top>
         <Left>14.74833cm</Left>
         <Height>0.6cm</Height>
         <Width>3.4652cm</Width>
-        <ZIndex>76</ZIndex>
+        <ZIndex>77</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -2944,7 +3738,7 @@
         <Left>0.81357cm</Left>
         <Height>0.44944cm</Height>
         <Width>2.37803cm</Width>
-        <ZIndex>77</ZIndex>
+        <ZIndex>78</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -2976,7 +3770,7 @@
         <Left>6.89053cm</Left>
         <Height>0.44944cm</Height>
         <Width>2.81749cm</Width>
-        <ZIndex>78</ZIndex>
+        <ZIndex>79</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -3008,7 +3802,7 @@
         <Left>9.88441cm</Left>
         <Height>0.44944cm</Height>
         <Width>2.56646cm</Width>
-        <ZIndex>79</ZIndex>
+        <ZIndex>80</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -3043,7 +3837,7 @@
         <Left>3.36799cm</Left>
         <Height>0.44944cm</Height>
         <Width>3.34615cm</Width>
-        <ZIndex>80</ZIndex>
+        <ZIndex>81</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -3078,7 +3872,7 @@
         <Left>12.62679cm</Left>
         <Height>0.44944cm</Height>
         <Width>2.39913cm</Width>
-        <ZIndex>81</ZIndex>
+        <ZIndex>82</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -3110,7 +3904,7 @@
         <Left>15.16703cm</Left>
         <Height>0.44944cm</Height>
         <Width>3.59029cm</Width>
-        <ZIndex>82</ZIndex>
+        <ZIndex>83</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -3129,7 +3923,7 @@
         <Left>0.48833in</Left>
         <Height>0.5in</Height>
         <Width>1.16971in</Width>
-        <ZIndex>83</ZIndex>
+        <ZIndex>84</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -3160,7 +3954,7 @@
         <Left>1.06932cm</Left>
         <Height>0.36771cm</Height>
         <Width>3.24554cm</Width>
-        <ZIndex>84</ZIndex>
+        <ZIndex>85</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -3195,7 +3989,7 @@
         <Left>0.82271cm</Left>
         <Height>0.44944cm</Height>
         <Width>2.32006cm</Width>
-        <ZIndex>85</ZIndex>
+        <ZIndex>86</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -3227,7 +4021,7 @@
         <Left>6.89053cm</Left>
         <Height>0.44944cm</Height>
         <Width>2.81749cm</Width>
-        <ZIndex>86</ZIndex>
+        <ZIndex>87</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -3259,7 +4053,7 @@
         <Left>9.88441cm</Left>
         <Height>0.44944cm</Height>
         <Width>2.56599cm</Width>
-        <ZIndex>87</ZIndex>
+        <ZIndex>88</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -3294,7 +4088,7 @@
         <Left>3.31916cm</Left>
         <Height>0.44944cm</Height>
         <Width>3.39498cm</Width>
-        <ZIndex>88</ZIndex>
+        <ZIndex>89</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -3329,7 +4123,7 @@
         <Left>12.62679cm</Left>
         <Height>0.44944cm</Height>
         <Width>2.39913cm</Width>
-        <ZIndex>89</ZIndex>
+        <ZIndex>90</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -3361,7 +4155,7 @@
         <Left>15.16703cm</Left>
         <Height>0.44944cm</Height>
         <Width>3.59029cm</Width>
-        <ZIndex>90</ZIndex>
+        <ZIndex>91</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -3403,11 +4197,11 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox15</rd:DefaultName>
-        <Top>25.31129cm</Top>
+        <Top>26.58129cm</Top>
         <Left>0.77829cm</Left>
         <Height>0.6cm</Height>
         <Width>1.1158cm</Width>
-        <ZIndex>91</ZIndex>
+        <ZIndex>92</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -3439,11 +4233,11 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox16</rd:DefaultName>
-        <Top>25.31129cm</Top>
+        <Top>26.58129cm</Top>
         <Left>2.15914cm</Left>
         <Height>0.6cm</Height>
         <Width>10.14872cm</Width>
-        <ZIndex>92</ZIndex>
+        <ZIndex>93</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -3451,905 +4245,8 @@
           <VerticalAlign>Middle</VerticalAlign>
         </Style>
       </Textbox>
-      <Rectangle Name="Rectangle2">
-        <ReportItems>
-          <Line Name="Line1">
-            <Top>1.69334cm</Top>
-            <Height>0cm</Height>
-            <Width>18.08133cm</Width>
-            <Style>
-              <Border>
-                <Style>Solid</Style>
-              </Border>
-            </Style>
-          </Line>
-          <Line Name="Line5">
-            <Left>3.31429cm</Left>
-            <Height>2.58383cm</Height>
-            <Width>0cm</Width>
-            <ZIndex>1</ZIndex>
-            <Style>
-              <Border>
-                <Style>Solid</Style>
-              </Border>
-            </Style>
-          </Line>
-          <Line Name="Line6">
-            <Top>0.91722cm</Top>
-            <Left>8.29505cm</Left>
-            <Height>1.66661cm</Height>
-            <Width>0cm</Width>
-            <ZIndex>2</ZIndex>
-            <Style>
-              <Border>
-                <Style>Solid</Style>
-              </Border>
-            </Style>
-          </Line>
-          <Textbox Name="Textbox67">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>怠 速 转 速</Value>
-                    <Style>
-                      <FontFamily>宋体</FontFamily>
-                      <FontSize>10.5pt</FontSize>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style>
-                  <TextAlign>Center</TextAlign>
-                </Style>
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox15</rd:DefaultName>
-            <Top>0.19899cm</Top>
-            <Left>0.35776cm</Left>
-            <Height>0.52944cm</Height>
-            <Width>2.7564cm</Width>
-            <ZIndex>3</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <VerticalAlign>Middle</VerticalAlign>
-            </Style>
-          </Textbox>
-          <Textbox Name="Textbox71">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>最后三次测量值(m</Value>
-                    <Style>
-                      <FontFamily>宋体</FontFamily>
-                      <FontSize>10.5pt</FontSize>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style>
-                  <TextAlign>Right</TextAlign>
-                </Style>
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox15</rd:DefaultName>
-            <Top>0.26955cm</Top>
-            <Left>4.36317cm</Left>
-            <Height>0.45889cm</Height>
-            <Width>3.02231cm</Width>
-            <ZIndex>4</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <VerticalAlign>Middle</VerticalAlign>
-            </Style>
-          </Textbox>
-          <Textbox Name="Textbox109">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>=Parameters!parameterFIRSTDATA.Value</Value>
-                    <Style>
-                      <FontFamily>宋体</FontFamily>
-                      <FontSize>10.5pt</FontSize>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style>
-                  <TextAlign>Center</TextAlign>
-                </Style>
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox15</rd:DefaultName>
-            <Top>1.85417cm</Top>
-            <Left>3.49068cm</Left>
-            <Height>0.46507cm</Height>
-            <Width>2.08821cm</Width>
-            <ZIndex>5</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <VerticalAlign>Middle</VerticalAlign>
-            </Style>
-          </Textbox>
-          <Textbox Name="Textbox113">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>=Parameters!parameterTHIRDDATA.Value</Value>
-                    <Style>
-                      <FontFamily>宋体</FontFamily>
-                      <FontSize>10.5pt</FontSize>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style>
-                  <TextAlign>Center</TextAlign>
-                </Style>
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox15</rd:DefaultName>
-            <Top>1.85417cm</Top>
-            <Left>8.47144cm</Left>
-            <Height>0.46507cm</Height>
-            <Width>2.12503cm</Width>
-            <ZIndex>6</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <VerticalAlign>Middle</VerticalAlign>
-            </Style>
-          </Textbox>
-          <Line Name="Line7">
-            <Left>13.13222cm</Left>
-            <Height>2.58383cm</Height>
-            <Width>0cm</Width>
-            <ZIndex>7</ZIndex>
-            <Style>
-              <Border>
-                <Style>Solid</Style>
-              </Border>
-            </Style>
-          </Line>
-          <Line Name="Line8">
-            <Top>0.91722cm</Top>
-            <Left>3.31429cm</Left>
-            <Height>0cm</Height>
-            <Width>7.45857cm</Width>
-            <ZIndex>8</ZIndex>
-            <Style>
-              <Border>
-                <Style>Solid</Style>
-              </Border>
-            </Style>
-          </Line>
-          <Line Name="Line9">
-            <Top>0.91722cm</Top>
-            <Left>5.7768cm</Left>
-            <Height>1.66661cm</Height>
-            <Width>0cm</Width>
-            <ZIndex>9</ZIndex>
-            <Style>
-              <Border>
-                <Style>Solid</Style>
-              </Border>
-            </Style>
-          </Line>
-          <Line Name="Line10">
-            <Left>10.77286cm</Left>
-            <Height>2.58383cm</Height>
-            <Width>0cm</Width>
-            <ZIndex>10</ZIndex>
-            <Style>
-              <Border>
-                <Style>Solid</Style>
-              </Border>
-            </Style>
-          </Line>
-          <Textbox Name="Textbox117">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>1</Value>
-                    <Style>
-                      <FontFamily>宋体</FontFamily>
-                      <FontSize>10.5pt</FontSize>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style>
-                  <TextAlign>Center</TextAlign>
-                </Style>
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox15</rd:DefaultName>
-            <Top>1.09361cm</Top>
-            <Left>3.51018cm</Left>
-            <Height>0.46507cm</Height>
-            <Width>2.06871cm</Width>
-            <ZIndex>11</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <VerticalAlign>Middle</VerticalAlign>
-            </Style>
-          </Textbox>
-          <Textbox Name="Textbox118">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>2</Value>
-                    <Style>
-                      <FontStyle>Normal</FontStyle>
-                      <FontFamily>宋体</FontFamily>
-                      <FontSize>10.5pt</FontSize>
-                      <FontWeight>Normal</FontWeight>
-                      <TextDecoration>None</TextDecoration>
-                      <Color>#000000</Color>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style>
-                  <TextAlign>Center</TextAlign>
-                </Style>
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox15</rd:DefaultName>
-            <Top>1.09361cm</Top>
-            <Left>5.95319cm</Left>
-            <Height>0.46507cm</Height>
-            <Width>2.16548cm</Width>
-            <ZIndex>12</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <VerticalAlign>Middle</VerticalAlign>
-            </Style>
-          </Textbox>
-          <Textbox Name="Textbox122">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>平均值</Value>
-                    <Style>
-                      <FontStyle>Normal</FontStyle>
-                      <FontFamily>宋体</FontFamily>
-                      <FontSize>10.5pt</FontSize>
-                      <FontWeight>Normal</FontWeight>
-                      <TextDecoration>None</TextDecoration>
-                      <Color>#000000</Color>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style>
-                  <TextAlign>Center</TextAlign>
-                </Style>
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox15</rd:DefaultName>
-            <Top>0.27576cm</Top>
-            <Left>10.97345cm</Left>
-            <Height>0.45267cm</Height>
-            <Width>1.98238cm</Width>
-            <ZIndex>13</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <VerticalAlign>Middle</VerticalAlign>
-            </Style>
-          </Textbox>
-          <Textbox Name="Textbox123">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>3</Value>
-                    <Style>
-                      <FontStyle>Normal</FontStyle>
-                      <FontFamily>宋体</FontFamily>
-                      <FontSize>10.5pt</FontSize>
-                      <FontWeight>Normal</FontWeight>
-                      <TextDecoration>None</TextDecoration>
-                      <Color>#000000</Color>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style>
-                  <TextAlign>Center</TextAlign>
-                </Style>
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox15</rd:DefaultName>
-            <Top>1.09361cm</Top>
-            <Left>8.47144cm</Left>
-            <Height>0.46507cm</Height>
-            <Width>2.12503cm</Width>
-            <ZIndex>14</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <VerticalAlign>Middle</VerticalAlign>
-            </Style>
-          </Textbox>
-          <Textbox Name="Textbox124">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>=Parameters!parameterSECONDDATA.Value</Value>
-                    <Style>
-                      <FontFamily>宋体</FontFamily>
-                      <FontSize>10.5pt</FontSize>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style>
-                  <TextAlign>Center</TextAlign>
-                </Style>
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox15</rd:DefaultName>
-            <Top>1.85417cm</Top>
-            <Left>5.95319cm</Left>
-            <Height>0.46507cm</Height>
-            <Width>2.08821cm</Width>
-            <ZIndex>15</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <VerticalAlign>Middle</VerticalAlign>
-            </Style>
-          </Textbox>
-          <Textbox Name="Textbox129">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>=Parameters!parameterPJZ.Value</Value>
-                    <Style>
-                      <FontFamily>宋体</FontFamily>
-                      <FontSize>10.5pt</FontSize>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style>
-                  <TextAlign>Center</TextAlign>
-                </Style>
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox15</rd:DefaultName>
-            <Top>1.85417cm</Top>
-            <Left>10.97345cm</Left>
-            <Height>0.46507cm</Height>
-            <Width>1.98239cm</Width>
-            <ZIndex>16</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <VerticalAlign>Middle</VerticalAlign>
-            </Style>
-          </Textbox>
-          <Textbox Name="Textbox145">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>)</Value>
-                    <Style>
-                      <FontFamily>宋体</FontFamily>
-                      <FontSize>10.5pt</FontSize>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style>
-                  <TextAlign>Left</TextAlign>
-                </Style>
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox15</rd:DefaultName>
-            <Top>0.26955cm</Top>
-            <Left>7.71785cm</Left>
-            <Height>0.47128cm</Height>
-            <Width>0.35882cm</Width>
-            <ZIndex>17</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <VerticalAlign>Middle</VerticalAlign>
-            </Style>
-          </Textbox>
-          <Textbox Name="Textbox146">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>-1</Value>
-                    <Style>
-                      <FontFamily>宋体</FontFamily>
-                      <FontSize>6pt</FontSize>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style>
-                  <TextAlign>Left</TextAlign>
-                </Style>
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox15</rd:DefaultName>
-            <Top>0.25715cm</Top>
-            <Left>7.38548cm</Left>
-            <Height>0.47128cm</Height>
-            <Width>0.26182cm</Width>
-            <ZIndex>18</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <VerticalAlign>Top</VerticalAlign>
-            </Style>
-          </Textbox>
-          <Textbox Name="Textbox68">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>(r/min)</Value>
-                    <Style>
-                      <FontStyle>Normal</FontStyle>
-                      <FontFamily>宋体</FontFamily>
-                      <FontSize>10.5pt</FontSize>
-                      <FontWeight>Normal</FontWeight>
-                      <TextDecoration>None</TextDecoration>
-                      <Color>#000000</Color>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style>
-                  <TextAlign>Center</TextAlign>
-                </Style>
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox15</rd:DefaultName>
-            <Top>0.92962cm</Top>
-            <Left>0.35776cm</Left>
-            <Height>0.48479cm</Height>
-            <Width>2.7564cm</Width>
-            <ZIndex>19</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <VerticalAlign>Middle</VerticalAlign>
-            </Style>
-          </Textbox>
-          <Line Name="Line12">
-            <Left>15.56866cm</Left>
-            <Height>2.58383cm</Height>
-            <Width>0cm</Width>
-            <ZIndex>20</ZIndex>
-            <Style>
-              <Border>
-                <Style>Solid</Style>
-              </Border>
-            </Style>
-          </Line>
-          <Textbox Name="Textbox73">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>(m</Value>
-                    <Style>
-                      <FontFamily>宋体</FontFamily>
-                      <FontSize>10.5pt</FontSize>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style>
-                  <TextAlign>Right</TextAlign>
-                </Style>
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox15</rd:DefaultName>
-            <Top>0.92962cm</Top>
-            <Left>11.45503cm</Left>
-            <Height>0.45889cm</Height>
-            <Width>0.42493cm</Width>
-            <ZIndex>21</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <VerticalAlign>Middle</VerticalAlign>
-            </Style>
-          </Textbox>
-          <Textbox Name="Textbox147">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>)</Value>
-                    <Style>
-                      <FontFamily>宋体</FontFamily>
-                      <FontSize>10.5pt</FontSize>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style>
-                  <TextAlign>Left</TextAlign>
-                </Style>
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox15</rd:DefaultName>
-            <Top>0.92962cm</Top>
-            <Left>12.21233cm</Left>
-            <Height>0.47128cm</Height>
-            <Width>0.35882cm</Width>
-            <ZIndex>22</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <VerticalAlign>Middle</VerticalAlign>
-            </Style>
-          </Textbox>
-          <Textbox Name="Textbox148">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>-1</Value>
-                    <Style>
-                      <FontFamily>宋体</FontFamily>
-                      <FontSize>6pt</FontSize>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style>
-                  <TextAlign>Left</TextAlign>
-                </Style>
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox15</rd:DefaultName>
-            <Top>0.91722cm</Top>
-            <Left>11.87996cm</Left>
-            <Height>0.47128cm</Height>
-            <Width>0.26182cm</Width>
-            <ZIndex>23</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <VerticalAlign>Top</VerticalAlign>
-            </Style>
-          </Textbox>
-          <Textbox Name="Textbox125">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>限　值</Value>
-                    <Style>
-                      <FontStyle>Normal</FontStyle>
-                      <FontFamily>宋体</FontFamily>
-                      <FontSize>10.5pt</FontSize>
-                      <FontWeight>Normal</FontWeight>
-                      <TextDecoration>None</TextDecoration>
-                      <Color>#000000</Color>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style>
-                  <TextAlign>Center</TextAlign>
-                </Style>
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox15</rd:DefaultName>
-            <Top>0.27577cm</Top>
-            <Left>13.40989cm</Left>
-            <Height>0.45267cm</Height>
-            <Width>1.98238cm</Width>
-            <ZIndex>24</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <VerticalAlign>Middle</VerticalAlign>
-            </Style>
-          </Textbox>
-          <Textbox Name="Textbox110">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>(m</Value>
-                    <Style>
-                      <FontFamily>宋体</FontFamily>
-                      <FontSize>10.5pt</FontSize>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style>
-                  <TextAlign>Right</TextAlign>
-                </Style>
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox15</rd:DefaultName>
-            <Top>0.92963cm</Top>
-            <Left>13.89147cm</Left>
-            <Height>0.45889cm</Height>
-            <Width>0.42493cm</Width>
-            <ZIndex>25</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <VerticalAlign>Middle</VerticalAlign>
-            </Style>
-          </Textbox>
-          <Textbox Name="Textbox149">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>)</Value>
-                    <Style>
-                      <FontFamily>宋体</FontFamily>
-                      <FontSize>10.5pt</FontSize>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style>
-                  <TextAlign>Left</TextAlign>
-                </Style>
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox15</rd:DefaultName>
-            <Top>0.92963cm</Top>
-            <Left>14.64877cm</Left>
-            <Height>0.47128cm</Height>
-            <Width>0.35882cm</Width>
-            <ZIndex>26</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <VerticalAlign>Middle</VerticalAlign>
-            </Style>
-          </Textbox>
-          <Textbox Name="Textbox150">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>-1</Value>
-                    <Style>
-                      <FontFamily>宋体</FontFamily>
-                      <FontSize>6pt</FontSize>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style>
-                  <TextAlign>Left</TextAlign>
-                </Style>
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox15</rd:DefaultName>
-            <Top>0.91723cm</Top>
-            <Left>14.3164cm</Left>
-            <Height>0.47128cm</Height>
-            <Width>0.26182cm</Width>
-            <ZIndex>27</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <VerticalAlign>Top</VerticalAlign>
-            </Style>
-          </Textbox>
-          <Textbox Name="Textbox130">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>合格判定</Value>
-                    <Style>
-                      <FontStyle>Normal</FontStyle>
-                      <FontFamily>宋体</FontFamily>
-                      <FontSize>10.5pt</FontSize>
-                      <FontWeight>Normal</FontWeight>
-                      <TextDecoration>None</TextDecoration>
-                      <Color>#000000</Color>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style>
-                  <TextAlign>Center</TextAlign>
-                </Style>
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox15</rd:DefaultName>
-            <Top>0.70528cm</Top>
-            <Left>15.74505cm</Left>
-            <Height>0.45267cm</Height>
-            <Width>1.87207cm</Width>
-            <ZIndex>28</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <VerticalAlign>Middle</VerticalAlign>
-            </Style>
-          </Textbox>
-          <Textbox Name="Textbox131">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>=Parameters!parameterXZ.Value</Value>
-                    <Style>
-                      <FontFamily>宋体</FontFamily>
-                      <FontSize>10.5pt</FontSize>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style>
-                  <TextAlign>Center</TextAlign>
-                </Style>
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox15</rd:DefaultName>
-            <Top>1.85417cm</Top>
-            <Left>13.40988cm</Left>
-            <Height>0.46507cm</Height>
-            <Width>1.98239cm</Width>
-            <ZIndex>29</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <VerticalAlign>Middle</VerticalAlign>
-            </Style>
-          </Textbox>
-          <Textbox Name="Textbox132">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>=Parameters!parameterHGPD.Value</Value>
-                    <Style>
-                      <FontFamily>宋体</FontFamily>
-                      <FontSize>10.5pt</FontSize>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style>
-                  <TextAlign>Center</TextAlign>
-                </Style>
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox15</rd:DefaultName>
-            <Top>1.85417cm</Top>
-            <Left>15.74505cm</Left>
-            <Height>0.46507cm</Height>
-            <Width>2.18957cm</Width>
-            <ZIndex>30</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <VerticalAlign>Middle</VerticalAlign>
-            </Style>
-          </Textbox>
-          <Textbox Name="Textbox111">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>=Parameters!parameterDSZS.Value</Value>
-                    <Style>
-                      <FontFamily>宋体</FontFamily>
-                      <FontSize>10.5pt</FontSize>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style>
-                  <TextAlign>Center</TextAlign>
-                </Style>
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox15</rd:DefaultName>
-            <Top>1.88945cm</Top>
-            <Left>0.35776cm</Left>
-            <Height>0.46507cm</Height>
-            <Width>2.7564cm</Width>
-            <ZIndex>31</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <VerticalAlign>Middle</VerticalAlign>
-            </Style>
-          </Textbox>
-        </ReportItems>
-        <KeepTogether>true</KeepTogether>
-        <Top>18.21581cm</Top>
-        <Left>0.73833cm</Left>
-        <Height>2.58383cm</Height>
-        <Width>18.08133cm</Width>
-        <ZIndex>93</ZIndex>
-        <Style>
-          <Border>
-            <Style>Solid</Style>
-          </Border>
-        </Style>
-      </Rectangle>
     </ReportItems>
-    <Height>10.43333in</Height>
+    <Height>10.77708in</Height>
     <Style />
   </Body>
   <Width>7.7in</Width>
