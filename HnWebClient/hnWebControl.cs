@@ -83,7 +83,7 @@ namespace HnWebClient
             HN_HPZL.Add("10", "领馆摩托车号牌");
             HN_HPZL.Add("11", "境外摩托车号牌");
             HN_HPZL.Add("12", "外籍摩托车号牌");
-            HN_HPZL.Add("13", "农用运输车号牌");
+            HN_HPZL.Add("13", "低速车号牌");
             HN_HPZL.Add("14", "拖拉机号牌");
             HN_HPZL.Add("15", "挂车号牌");
             HN_HPZL.Add("16", "教练汽车号牌");
@@ -109,7 +109,7 @@ namespace HnWebClient
             RHN_HPZL.Add("领馆摩托车号牌", "10");
             RHN_HPZL.Add("境外摩托车号牌", "11");
             RHN_HPZL.Add("外籍摩托车号牌", "12");
-            RHN_HPZL.Add("农用运输车号牌", "13");
+            RHN_HPZL.Add("低速车号牌", "13");
             RHN_HPZL.Add("拖拉机号牌", "14");
             RHN_HPZL.Add("挂车号牌", "15");
             RHN_HPZL.Add("教练汽车号牌", "16");
@@ -262,7 +262,7 @@ namespace HnWebClient
             HN_HPZL.Add("10", "领馆摩托车号牌");
             HN_HPZL.Add("11", "境外摩托车号牌");
             HN_HPZL.Add("12", "外籍摩托车号牌");
-            HN_HPZL.Add("13", "农用运输车号牌");
+            HN_HPZL.Add("13", "低速车号牌");
             HN_HPZL.Add("14", "拖拉机号牌");
             HN_HPZL.Add("15", "挂车号牌");
             HN_HPZL.Add("16", "教练汽车号牌");
@@ -288,7 +288,7 @@ namespace HnWebClient
             RHN_HPZL.Add("领馆摩托车号牌", "10");
             RHN_HPZL.Add("境外摩托车号牌", "11");
             RHN_HPZL.Add("外籍摩托车号牌", "12");
-            RHN_HPZL.Add("农用运输车号牌", "13");
+            RHN_HPZL.Add("低速车号牌", "13");
             RHN_HPZL.Add("拖拉机号牌", "14");
             RHN_HPZL.Add("挂车号牌", "15");
             RHN_HPZL.Add("教练汽车号牌", "16");

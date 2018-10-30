@@ -92,7 +92,7 @@ namespace DlWebClient
             DL_YZZL.Add("1", "载客");
 
             DL_QDFS.Add("0", "前驱");
-            DL_QDFS.Add("1", "后躯");
+            DL_QDFS.Add("1", "后驱");
             DL_QDFS.Add("2", "全驱 ");
 
             DL_BSQXS.Add("0", "手动");
