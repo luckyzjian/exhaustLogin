@@ -95,6 +95,11 @@ namespace exhaustLogin
                     {
                         foreach (DataRow dR in dt.Rows)
                         {
+                            if (!mainPanel.isNetUsed && mainPanel.netMode == mainPanel.ZJNETMODE)
+                            {
+                                if (dR["TEST"].ToString() != "Y")
+                                    continue;
+                            }
                             if (dR["SFJF"].ToString() == "Y" && checkBoxNoPrinted.Checked == true)
                                 continue;
                             dr = dt_wait.NewRow();
@@ -229,6 +234,11 @@ namespace exhaustLogin
                 {
                     foreach (DataRow dR in dt.Rows)
                     {
+                        if (!mainPanel.isNetUsed && mainPanel.netMode == mainPanel.ZJNETMODE)
+                        {
+                            if (dR["TEST"].ToString() != "Y")
+                                continue;
+                        }
                         if (dR["SFJF"].ToString() == "Y" && checkBoxNoPrinted.Checked == true)
                             continue;
                         dr = dt_wait.NewRow();
@@ -290,8 +300,14 @@ namespace exhaustLogin
                 {
                     foreach (DataRow dR in dt.Rows)
                     {
+                        if(!mainPanel.isNetUsed&&mainPanel.netMode == mainPanel.ZJNETMODE)
+                        {
+                            if (dR["TEST"].ToString() != "Y")
+                                continue;
+                        }
                         if (dR["SFJF"].ToString() == "Y" && checkBoxNoPrinted.Checked == true)
                             continue;
+                        
                         dr = dt_wait.NewRow();
                         dr["项目"] = "环保检查";
                         dr["检测编号"] = dR["CLID"].ToString();
@@ -2443,6 +2459,7 @@ namespace exhaustLogin
 
                 carbg = mainPanel.logininfcontrol.getCarbjbycarID(clid);
                 SYS.Model.CARINF carbgo = mainPanel.logininfcontrol.getCarInfbyPlate(carbg.CLHP);
+                SYS_MODEL.equipmentModel emodel = mainPanel.stationcontrol.getLineEquipInf(mainPanel.stationid, carbg.LINEID);
                 if (mainPanel.isNetUsed && mainPanel.netMode == mainPanel.ZJNETMODE)
                 {
                     try
@@ -13602,6 +13619,7 @@ namespace exhaustLogin
                 
                 carbg = mainPanel.logininfcontrol.getCarbjbycarID(selectID[0]);
                 SYS.Model.CARINF carbgo = mainPanel.logininfcontrol.getCarInfbyPlate(carbg.CLHP);
+                SYS_MODEL.equipmentModel emodel = mainPanel.stationcontrol.getLineEquipInf(mainPanel.stationid, carbg.LINEID);
                 if (mainPanel.isNetUsed && mainPanel.netMode == mainPanel.ZJNETMODE)
                 {
                     try
@@ -22006,6 +22024,8 @@ namespace exhaustLogin
                                 new ReportParameter("parameterFxyxh",asmdata.FXYXH),
                                 new ReportParameter("parameterFxybh",asmdata.FXYBH),
                                 new ReportParameter("parameterFxycj",asmdata.FXYZZC),
+                    new ReportParameter("parameterZsjxh",emodel.ZSJXH),
+                    new ReportParameter("parameterZsjbh",emodel.ZSJBH),
                                 new ReportParameter("parameterWd",asmdata.WD),
                                 new ReportParameter("parameterDqy",asmdata.DQY),
                                 new ReportParameter("parameterSd",asmdata.SD),
@@ -22219,6 +22239,8 @@ namespace exhaustLogin
                                     new ReportParameter("parameterFxyxh",jzjsdata.YDJXH),
                                     new ReportParameter("parameterFxybh",jzjsdata.YDJBH),
                                     new ReportParameter("parameterFxycj",jzjsdata.YDJZZC),
+                    new ReportParameter("parameterZsjxh",jzjsdata.ZSJXH),
+                    new ReportParameter("parameterZsjbh",jzjsdata.ZSJBH),
                                     new ReportParameter("parameterWd",jzjsdata.WD),
                                     new ReportParameter("parameterDqy",jzjsdata.DQY),
                                     new ReportParameter("parameterSd",jzjsdata.SD),
@@ -22303,6 +22325,8 @@ namespace exhaustLogin
                                     new ReportParameter("parameterFxyxh",sdsdata.FXYXH),
                                     new ReportParameter("parameterFxybh",sdsdata.FXYBH),
                                     new ReportParameter("parameterFxycj",sdsdata.FXYZZC),
+                    new ReportParameter("parameterZsjxh",sdsdata.ZSJXH),
+                    new ReportParameter("parameterZsjbh",sdsdata.ZSJBH),
                                     new ReportParameter("parameterWd",sdsdata.WD),
                                     new ReportParameter("parameterDqy",sdsdata.DQY),
                                     new ReportParameter("parameterSd",sdsdata.SD),
@@ -22391,6 +22415,8 @@ namespace exhaustLogin
                                     new ReportParameter("parameterFxyxh",zyjsdata.YDJXH),
                                     new ReportParameter("parameterFxybh",zyjsdata.YDJBH),
                                     new ReportParameter("parameterFxycj",zyjsdata.YDJZZC),
+                    new ReportParameter("parameterZsjxh",zyjsdata.ZSJXH),
+                    new ReportParameter("parameterZsjbh",zyjsdata.ZSJBH),
                                     new ReportParameter("parameterWd",zyjsdata.WD),
                                     new ReportParameter("parameterDqy",zyjsdata.DQY),
                                     new ReportParameter("parameterSd",zyjsdata.SD),

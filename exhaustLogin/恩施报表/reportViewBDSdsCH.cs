@@ -121,6 +121,8 @@ namespace exhaustDetect
                     new ReportParameter("parameterFxyxh",asm_data.FXYXH),
                     new ReportParameter("parameterFxybh",asm_data.FXYBH),
                     new ReportParameter("parameterFxycj",asm_data.FXYZZC),
+                    new ReportParameter("parameterZsjxh",asm_data.ZSJXH),
+                    new ReportParameter("parameterZsjbh",asm_data.ZSJBH),
                     new ReportParameter("parameterWd",asm_data.WD),
                     new ReportParameter("parameterDqy",asm_data.DQY),
                     new ReportParameter("parameterSd",asm_data.SD),

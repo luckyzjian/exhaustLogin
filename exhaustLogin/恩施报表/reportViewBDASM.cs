@@ -68,6 +68,7 @@ namespace exhaustLogin
             reportViewer1.LocalReport.Dispose();
             reportViewer1.Visible = true;
             string teststring = DateTime.Now.ToShortDateString();
+            SYS_MODEL.equipmentModel emodel = mainPanel.stationcontrol.getLineEquipInf(mainPanel.stationid, carinf.LINEID);
             try
             {
                 ReportParameter[] rptpara =
@@ -116,6 +117,8 @@ namespace exhaustLogin
                     new ReportParameter("parameterFxyxh",asm_data.FXYXH),
                     new ReportParameter("parameterFxybh",asm_data.FXYBH),
                     new ReportParameter("parameterFxycj",asm_data.FXYZZC),
+                    new ReportParameter("parameterZsjxh",emodel.ZSJXH),
+                    new ReportParameter("parameterZsjbh",emodel.ZSJBH),
                     new ReportParameter("parameterWd",asm_data.WD),
                     new ReportParameter("parameterDqy",asm_data.DQY),
                     new ReportParameter("parameterSd",asm_data.SD),
