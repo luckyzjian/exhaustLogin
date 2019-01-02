@@ -97,7 +97,7 @@ namespace exhaustLogin
                         {
                             if (!mainPanel.isNetUsed && mainPanel.netMode == mainPanel.ZJNETMODE)
                             {
-                                if (dR["TEST"].ToString() != "Y")
+                                if (dR["TEST"].ToString() == "Y")
                                     continue;
                             }
                             if (dR["SFJF"].ToString() == "Y" && checkBoxNoPrinted.Checked == true)
@@ -236,7 +236,7 @@ namespace exhaustLogin
                     {
                         if (!mainPanel.isNetUsed && mainPanel.netMode == mainPanel.ZJNETMODE)
                         {
-                            if (dR["TEST"].ToString() != "Y")
+                            if (dR["TEST"].ToString() == "Y")
                                 continue;
                         }
                         if (dR["SFJF"].ToString() == "Y" && checkBoxNoPrinted.Checked == true)
@@ -302,7 +302,7 @@ namespace exhaustLogin
                     {
                         if(!mainPanel.isNetUsed&&mainPanel.netMode == mainPanel.ZJNETMODE)
                         {
-                            if (dR["TEST"].ToString() != "Y")
+                            if (dR["TEST"].ToString() == "Y")
                                 continue;
                         }
                         if (dR["SFJF"].ToString() == "Y" && checkBoxNoPrinted.Checked == true)
